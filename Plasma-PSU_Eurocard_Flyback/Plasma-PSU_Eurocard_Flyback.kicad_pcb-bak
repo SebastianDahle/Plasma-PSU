@@ -1879,6 +1879,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/packages3d/39281243.stp
+      (offset (xyz 23.1 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module Connector_Molex:Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical (layer F.Cu) (tedit 5B781992) (tstamp 5E7AAB2F)
