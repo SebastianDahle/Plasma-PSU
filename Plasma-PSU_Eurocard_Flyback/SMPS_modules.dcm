@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RD_DPS5015
+D Ruideng programmable digital power supply 50V 15A
+F https://cdn-reichelt.de/documents/datenblatt/D400/DPS5015_DS_ENG.pdf
+$ENDCMP
+#
+#End Doc Library
