@@ -18,22 +18,22 @@ Text HLabel 850  2850 1    50   Input ~ 0
 +12V_IN
 Text HLabel 850  3250 3    50   Input ~ 0
 GND_IN
-Text HLabel 10750 2950 2    50   Output ~ 0
+Text HLabel 11100 2850 1    50   Output ~ 0
 VDD_OUT
-Text HLabel 10750 3150 2    50   Output ~ 0
+Text HLabel 11050 3400 3    50   Output ~ 0
 GND_OUT
 Text HLabel 4800 1850 0    50   Input ~ 0
 CTRL_IN
 Text HLabel 10100 4850 2    50   Output ~ 0
 I-Sense_OUT
-Text HLabel 10550 2550 2    50   Output ~ 0
+Text HLabel 11000 2500 1    50   Output ~ 0
 U-Sense_OUT
 $Comp
 L Device:C_Small C?
 U 1 1 5E8B65A6
 P 1500 3050
 F 0 "C?" H 1592 3096 50  0000 L CNN
-F 1 "100nF" H 1592 3005 50  0000 L CNN
+F 1 "6.8µF" H 1592 3005 50  0000 L CNN
 F 2 "" H 1500 3050 50  0001 C CNN
 F 3 "~" H 1500 3050 50  0001 C CNN
 	1    1500 3050
@@ -55,7 +55,7 @@ L Device:C_Small C?
 U 1 1 5E8B772C
 P 2000 3050
 F 0 "C?" H 2092 3096 50  0000 L CNN
-F 1 "100nF" H 2092 3005 50  0000 L CNN
+F 1 "6.8µF" H 2092 3005 50  0000 L CNN
 F 2 "" H 2000 3050 50  0001 C CNN
 F 3 "~" H 2000 3050 50  0001 C CNN
 	1    2000 3050
@@ -129,12 +129,12 @@ Connection ~ 3000 3150
 $Comp
 L Device:C_Small C?
 U 1 1 5E8B8979
-P 9450 3050
-F 0 "C?" H 9542 3096 50  0000 L CNN
-F 1 "100nF" H 9542 3005 50  0000 L CNN
-F 2 "" H 9450 3050 50  0001 C CNN
-F 3 "~" H 9450 3050 50  0001 C CNN
-	1    9450 3050
+P 9400 3050
+F 0 "C?" H 9492 3096 50  0000 L CNN
+F 1 "6.8µF" H 9492 3005 50  0000 L CNN
+F 2 "" H 9400 3050 50  0001 C CNN
+F 3 "~" H 9400 3050 50  0001 C CNN
+	1    9400 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,34 +151,34 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E8C18D8
-P 10400 2350
-F 0 "R?" H 10330 2304 50  0000 R CNN
-F 1 "5k" H 10330 2395 50  0000 R CNN
-F 2 "" V 10330 2350 50  0001 C CNN
-F 3 "~" H 10400 2350 50  0001 C CNN
-	1    10400 2350
+P 10750 2350
+F 0 "R?" H 10680 2304 50  0000 R CNN
+F 1 "5k" H 10680 2395 50  0000 R CNN
+F 2 "" V 10680 2350 50  0001 C CNN
+F 3 "~" H 10750 2350 50  0001 C CNN
+	1    10750 2350
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E8C1FE2
-P 10400 2750
-F 0 "R?" H 10470 2796 50  0000 L CNN
-F 1 "20k" H 10470 2705 50  0000 L CNN
-F 2 "" V 10330 2750 50  0001 C CNN
-F 3 "~" H 10400 2750 50  0001 C CNN
-	1    10400 2750
+P 10750 2750
+F 0 "R?" H 10820 2796 50  0000 L CNN
+F 1 "20k" H 10820 2705 50  0000 L CNN
+F 2 "" V 10680 2750 50  0001 C CNN
+F 3 "~" H 10750 2750 50  0001 C CNN
+	1    10750 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Shunt R?
 U 1 1 5E8C5243
-P 10450 3250
-F 0 "R?" V 10225 3250 50  0000 C CNN
-F 1 "R_Shunt" V 10316 3250 50  0000 C CNN
-F 2 "" V 10380 3250 50  0001 C CNN
-F 3 "~" H 10450 3250 50  0001 C CNN
-	1    10450 3250
+P 10800 3250
+F 0 "R?" V 10575 3250 50  0000 C CNN
+F 1 "R_Shunt" V 10666 3250 50  0000 C CNN
+F 2 "" V 10730 3250 50  0001 C CNN
+F 3 "~" H 10800 3250 50  0001 C CNN
+	1    10800 3250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -295,12 +295,10 @@ Wire Wire Line
 	9850 4850 9950 4850
 Connection ~ 9950 4850
 Wire Wire Line
-	10400 2500 10400 2550
+	10750 2500 10750 2550
+Connection ~ 10750 2550
 Wire Wire Line
-	10550 2550 10400 2550
-Connection ~ 10400 2550
-Wire Wire Line
-	10400 2550 10400 2600
+	10750 2550 10750 2600
 Wire Wire Line
 	9950 4850 10100 4850
 Connection ~ 3500 2950
@@ -439,7 +437,7 @@ $EndComp
 Wire Wire Line
 	4500 2300 4600 2300
 Wire Wire Line
-	10150 2950 10150 2300
+	10500 2950 10500 2300
 $Comp
 L Device:C_Small C?
 U 1 1 5E9B1E6A
@@ -563,7 +561,7 @@ Wire Wire Line
 	6150 4750 4900 4750
 Connection ~ 6150 4750
 Text Notes 8650 1250 0    50   ~ 0
-TODO revise output caps\nTODO revise input caps\nTODO revise Rsense according to dI_L\nTODO revise I sense op amp gain
+TODO revise output caps\nTODO revise input caps\nTODO revise Rsense according to dI_L\nTODO include CTRL_IN via MCP602_B\nTODO revise I sense op amp gain
 $Comp
 L Device:D_Zener D?
 U 1 1 5EAB3FD6
@@ -603,51 +601,34 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5EB20DC9
-P 9000 3050
-F 0 "C?" H 9092 3096 50  0000 L CNN
-F 1 "100nF" H 9092 3005 50  0000 L CNN
-F 2 "" H 9000 3050 50  0001 C CNN
-F 3 "~" H 9000 3050 50  0001 C CNN
-	1    9000 3050
+P 8950 3050
+F 0 "C?" H 9042 3096 50  0000 L CNN
+F 1 "6.8µF" H 9042 3005 50  0000 L CNN
+F 2 "" H 8950 3050 50  0001 C CNN
+F 3 "~" H 8950 3050 50  0001 C CNN
+	1    8950 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 2950 8100 2950
-Wire Wire Line
-	9150 3750 10350 3750
-Wire Wire Line
-	5300 2300 10150 2300
-Connection ~ 9900 2950
-Connection ~ 9450 2950
-Wire Wire Line
-	9450 2950 9900 2950
-Connection ~ 9450 3150
-Wire Wire Line
-	9450 3150 9900 3150
-Connection ~ 9000 2950
-Connection ~ 9000 3150
 $Comp
 L Device:C_Small C?
 U 1 1 5EB34187
-P 8550 3050
-F 0 "C?" H 8642 3096 50  0000 L CNN
-F 1 "100nF" H 8642 3005 50  0000 L CNN
-F 2 "" H 8550 3050 50  0001 C CNN
-F 3 "~" H 8550 3050 50  0001 C CNN
-	1    8550 3050
+P 8500 3050
+F 0 "C?" H 8592 3096 50  0000 L CNN
+F 1 "100nF" H 8592 3005 50  0000 L CNN
+F 2 "" H 8500 3050 50  0001 C CNN
+F 3 "~" H 8500 3050 50  0001 C CNN
+	1    8500 3050
 	1    0    0    -1  
 $EndComp
-Connection ~ 8550 2950
-Connection ~ 8550 3150
 $Comp
 L Device:CP_Small C?
 U 1 1 5EB34616
-P 9900 3050
-F 0 "C?" H 9988 3096 50  0000 L CNN
-F 1 "220uF" H 9988 3005 50  0000 L CNN
-F 2 "" H 9900 3050 50  0001 C CNN
-F 3 "~" H 9900 3050 50  0001 C CNN
-	1    9900 3050
+P 10200 3050
+F 0 "C?" H 10288 3096 50  0000 L CNN
+F 1 "220uF" H 10288 3005 50  0000 L CNN
+F 2 "" H 10200 3050 50  0001 C CNN
+F 3 "~" H 10200 3050 50  0001 C CNN
+	1    10200 3050
 	1    0    0    -1  
 $EndComp
 Connection ~ 8100 2950
@@ -657,18 +638,6 @@ Wire Wire Line
 	8100 4750 8300 4750
 Wire Wire Line
 	7450 4750 8100 4750
-Wire Wire Line
-	8100 3150 8550 3150
-Wire Wire Line
-	8100 2950 8550 2950
-Wire Wire Line
-	8550 2950 9000 2950
-Wire Wire Line
-	8550 3150 9000 3150
-Wire Wire Line
-	9000 3150 9450 3150
-Wire Wire Line
-	9000 2950 9450 2950
 Text Notes 5750 2900 0    50   ~ 0
 Vout(max) = 36V;  Vout(typ) = 24V\nIout(max) = 20A;   Iout(typ) = 12A\ndI(max,soll)% = 15%  inductance ripple\ndI = Vin/(f*L) * (1 - Vin/Vout)\n=> L = 10 µH (+/-10%)
 $Comp
@@ -699,8 +668,6 @@ Wire Wire Line
 	6800 3300 6800 3600
 Wire Wire Line
 	7750 3300 7750 3250
-Text Notes 8600 2900 0    50   ~ 0
-4x 6.8µF per datasheet example...?
 Text Notes 1800 2900 0    50   ~ 0
 4x 6.8µF per datasheet example...?
 $Comp
@@ -852,37 +819,87 @@ Wire Wire Line
 	1000 7100 1000 6900
 Connection ~ 1000 6900
 Wire Wire Line
-	10650 3250 10700 3250
+	11000 3250 11050 3250
 Wire Wire Line
-	10700 3250 10700 3150
+	10900 3700 10900 3400
 Wire Wire Line
-	10700 3150 10750 3150
-Connection ~ 9900 3150
+	10700 3400 10700 3750
 Wire Wire Line
-	9900 2950 10150 2950
+	10600 3150 10600 3250
+Connection ~ 10500 2950
 Wire Wire Line
-	10550 3700 10550 3400
+	10500 2950 10750 2950
 Wire Wire Line
-	8950 3700 10550 3700
+	10750 2950 10750 2900
+Connection ~ 10750 2950
 Wire Wire Line
-	10350 3400 10350 3750
+	10750 2950 11100 2950
 Wire Wire Line
-	9900 3150 10250 3150
+	10750 2200 10750 2100
 Wire Wire Line
-	10250 3150 10250 3250
-Connection ~ 10150 2950
+	10750 2100 10600 2100
 Wire Wire Line
-	10150 2950 10400 2950
+	10600 2100 10600 3150
+Connection ~ 10600 3150
 Wire Wire Line
-	10400 2950 10400 2900
-Connection ~ 10400 2950
+	11050 3400 11050 3250
 Wire Wire Line
-	10400 2950 10750 2950
+	11000 2550 11000 2500
 Wire Wire Line
-	10400 2200 10400 2100
+	10750 2550 11000 2550
 Wire Wire Line
-	10400 2100 10250 2100
+	11100 2950 11100 2850
+$Comp
+L Device:C_Small C?
+U 1 1 5E8DF31F
+P 9800 3050
+F 0 "C?" H 9892 3096 50  0000 L CNN
+F 1 "6.8µF" H 9892 3005 50  0000 L CNN
+F 2 "" H 9800 3050 50  0001 C CNN
+F 3 "~" H 9800 3050 50  0001 C CNN
+	1    9800 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9400 2950
+Connection ~ 9400 3150
+Connection ~ 9800 2950
+Connection ~ 9800 3150
+Connection ~ 8950 2950
+Connection ~ 8950 3150
+Connection ~ 8500 2950
+Connection ~ 8500 3150
 Wire Wire Line
-	10250 2100 10250 3150
-Connection ~ 10250 3150
+	7950 2950 8100 2950
+Wire Wire Line
+	9400 2950 9800 2950
+Wire Wire Line
+	9400 3150 9800 3150
+Wire Wire Line
+	8100 3150 8500 3150
+Wire Wire Line
+	8100 2950 8500 2950
+Wire Wire Line
+	8950 3150 9400 3150
+Wire Wire Line
+	8950 2950 9400 2950
+Wire Wire Line
+	8500 2950 8950 2950
+Wire Wire Line
+	8500 3150 8950 3150
+Wire Wire Line
+	9800 2950 10200 2950
+Connection ~ 10200 2950
+Wire Wire Line
+	10200 2950 10500 2950
+Wire Wire Line
+	9800 3150 10200 3150
+Connection ~ 10200 3150
+Wire Wire Line
+	10200 3150 10600 3150
+Wire Wire Line
+	5300 2300 10500 2300
+Wire Wire Line
+	8950 3700 10900 3700
+Wire Wire Line
+	9150 3750 10700 3750
 $EndSCHEMATC
