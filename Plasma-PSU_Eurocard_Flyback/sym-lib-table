@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SMPS_modules)(type Legacy)(uri ${KIPRJMOD}/SMPS_modules.lib)(options "")(descr ""))
+  (lib (name Regulator_Switching)(type Legacy)(uri ${KIPRJMOD}/Regulator_Switching.lib)(options "")(descr ""))
 )

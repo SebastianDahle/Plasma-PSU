@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "Plasma-PSU_Eurocard_Flyback"
 Date "2020-04-06"
 Rev "0.0.2"
@@ -397,4 +397,6 @@ Text HLabel 4350 2550 1    50   Input ~ 0
 PWM
 Text HLabel 4500 2550 1    50   Input ~ 0
 ENBL
+Text Notes 1750 800  0    50   ~ 0
+TODO: REVISE: calculate RMS currents and size caps accordingly
 $EndSCHEMATC

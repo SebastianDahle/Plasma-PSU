@@ -996,5 +996,5 @@ HV stage on separate \nPCB to avoid EMI \nfrom transformer
 Text Notes 9550 2050 0    50   ~ 0
 HV stage connectors:\n- Power input 5-40V\n- Enable\n- Molex 8981 (12V & 5V supplies)\n- PWM signal
 Text Notes 5850 4300 0    50   ~ 0
-Arduino configuration:\nPWM via timer1 on D8 / pin11)\nENBL signal on D9 / pin 12\nCTRL signal towards SMPS on A0 / pin 19\nU sensing on A6 / pin 25\nI sensing on A7 / pin 26\nUART on D0 & D1 / pin 2 & 1\nI2C signal on A4 & A5 / pin 23 & 24
+Arduino configuration:\n- PWM via timer1 on D8 / pin11)\n- ENBL signal on D9 / pin 12\n- CTRL signal towards SMPS on A0 / pin 19\n- U sensing on A6 / pin 25\n- I sensing on A7 / pin 26\n- UART on D0 & D1 / pin 2 & 1\n- I2C signal on A4 & A5 / pin 23 & 24
 $EndSCHEMATC
