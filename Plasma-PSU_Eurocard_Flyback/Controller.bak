@@ -798,10 +798,6 @@ F 3 "" H 7100 5250 50  0001 C CNN
 $EndComp
 Text Notes 3400 4900 2    50   ~ 0
 SPI\n\nSCK\nMISO\nMOSI\nCS\n+5V\nGND
-Text HLabel 4150 4300 1    50   Output ~ 0
-D13_16
-Wire Wire Line
-	4150 4300 4150 4400
 Wire Wire Line
 	3850 4400 3850 3200
 Connection ~ 3850 3200
@@ -821,4 +817,11 @@ Wire Wire Line
 Connection ~ 4050 3400
 Wire Wire Line
 	4050 3400 5000 3400
+Wire Wire Line
+	4900 3500 4150 3500
+Wire Wire Line
+	4150 3500 4150 4400
+Connection ~ 4900 3500
+Text Notes 9000 1000 0    50   ~ 0
+TODO Filters for U-sense and I-sense\nTODO DAC for CTRL
 $EndSCHEMATC

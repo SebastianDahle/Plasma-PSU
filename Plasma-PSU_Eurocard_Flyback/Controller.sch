@@ -822,4 +822,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 3500 4150 4400
 Connection ~ 4900 3500
+Text Notes 9000 1000 0    50   ~ 0
+TODO Filters for U-sense and I-sense\nTODO DAC for CTRL
 $EndSCHEMATC

@@ -416,14 +416,14 @@ $EndBitmap
 $Comp
 L Power_Management:STM6600 U?
 U 1 1 5E8E05E6
-P 6450 2800
+P 5700 2000
 AR Path="/5E8E05E6" Ref="U?"  Part="1" 
 AR Path="/5E8DCD8E/5E8E05E6" Ref="U?"  Part="1" 
-F 0 "U?" H 6450 3581 50  0000 C CNN
-F 1 "STM6600" H 6450 3490 50  0000 C CNN
-F 2 "Package_DFN_QFN:TDFN-12_2x3mm_P0.5mm" H 6450 2100 50  0001 C CNN
-F 3 "http://www.st.com/resource/en/datasheet/stm6600.pdf" H 6050 3400 50  0001 C CNN
-	1    6450 2800
+F 0 "U?" H 5950 2650 50  0000 C CNN
+F 1 "STM6600" H 5950 2550 50  0000 C CNN
+F 2 "Package_DFN_QFN:TDFN-12_2x3mm_P0.5mm" H 5700 1300 50  0001 C CNN
+F 3 "http://www.st.com/resource/en/datasheet/stm6600.pdf" H 5300 2600 50  0001 C CNN
+	1    5700 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -800,7 +800,6 @@ F 3 "~" H 1600 4400 50  0001 C CNN
 	1    1600 4400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1400 1800
 NoConn ~ 1900 1700
 Text Notes 700  700  0    50   ~ 0
 POWER CONNECTORS
@@ -1268,7 +1267,7 @@ PWR_GOOD
 Text HLabel 2200 1300 2    50   Input ~ 0
 PWR_ON
 Text HLabel 1300 4100 0    50   Output ~ 0
-PWR_ON
+PB
 Wire Wire Line
 	1400 4100 1300 4100
 $Comp
@@ -1284,64 +1283,38 @@ F 3 "" H 1900 4100 50  0001 C CNN
 	1    1900 4100
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2000 4200 2    50   Output ~ 0
-START_BTN
-Text HLabel 2000 4400 2    50   Output ~ 0
-ENBL_JP
-Text HLabel 1300 4600 0    50   Input ~ 0
-PLASMA_ON
-Text HLabel 1300 4700 0    50   Input ~ 0
-PLASMA_OFF
-$Comp
-L power:+12V #PWR?
-U 1 1 5E8EF20A
-P 1400 4200
-AR Path="/5E8EF20A" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DCD8E/5E8EF20A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1400 4050 50  0001 C CNN
-F 1 "+12V" V 1415 4328 50  0000 L CNN
-F 2 "" H 1400 4200 50  0001 C CNN
-F 3 "" H 1400 4200 50  0001 C CNN
-	1    1400 4200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2000 4200 1900 4200
-Text Notes 2550 4700 0    50   ~ 0
-Pinheader configuration:\n 1-2  Power button\n 3-4  Start button\n 5-6  Stop button\n 7-8  Interrupt jumper\n 9-10 LED Power on\n11-12 LED Plasma on\n13-14 LED Plasma off\n15-16 n.c.
 Text HLabel 2000 4300 2    50   Output ~ 0
-STOP_BTN
+START_BTN
+Text HLabel 2000 4500 2    50   Output ~ 0
+ENBL_JP
+Text HLabel 1300 4700 0    50   Input ~ 0
+PLASMA_ON
+Text HLabel 1300 4800 0    50   Input ~ 0
+PLASMA_OFF
 Wire Wire Line
 	2000 4300 1900 4300
-Wire Wire Line
-	1400 4400 1300 4400
-Text HLabel 1300 4400 0    50   Input ~ 0
+Text Notes 2550 4700 0    50   ~ 0
+Pinheader configuration:\n 1-2  Power button\n 3-4  Reset button\n 5-6  Start button\n 7-8  Stop button\n 9-10 Interrupt jumper\n11-12 LED Power on\n13-14 LED Plasma on\n15-16 LED Plasma off
+Text HLabel 2000 4400 2    50   Output ~ 0
 STOP_BTN
 Wire Wire Line
 	2000 4400 1900 4400
 Wire Wire Line
-	1300 4500 1400 4500
+	1400 4500 1300 4500
+Text HLabel 1300 4500 0    50   Input ~ 0
+STOP_BTN
 Wire Wire Line
-	1400 4600 1300 4600
+	2000 4500 1900 4500
+Wire Wire Line
+	1300 4600 1400 4600
+Wire Wire Line
+	1400 4700 1300 4700
 $Comp
 L power:GND #PWR?
 U 1 1 5E8EF219
-P 1900 4500
+P 1900 4600
 AR Path="/5E8EF219" Ref="#PWR?"  Part="1" 
 AR Path="/5E8DCD8E/5E8EF219" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1900 4250 50  0001 C CNN
-F 1 "GND" V 1905 4372 50  0000 R CNN
-F 2 "" H 1900 4500 50  0001 C CNN
-F 3 "" H 1900 4500 50  0001 C CNN
-	1    1900 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E8EF21F
-P 1900 4600
-AR Path="/5E8EF21F" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DCD8E/5E8EF21F" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1900 4350 50  0001 C CNN
 F 1 "GND" V 1905 4472 50  0000 R CNN
 F 2 "" H 1900 4600 50  0001 C CNN
@@ -1349,14 +1322,12 @@ F 3 "" H 1900 4600 50  0001 C CNN
 	1    1900 4600
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 1400 4800
-NoConn ~ 1900 4800
 $Comp
 L power:GND #PWR?
-U 1 1 5E8EF227
+U 1 1 5E8EF21F
 P 1900 4700
-AR Path="/5E8EF227" Ref="#PWR?"  Part="1" 
-AR Path="/5E8DCD8E/5E8EF227" Ref="#PWR?"  Part="1" 
+AR Path="/5E8EF21F" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DCD8E/5E8EF21F" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1900 4450 50  0001 C CNN
 F 1 "GND" V 1905 4572 50  0000 R CNN
 F 2 "" H 1900 4700 50  0001 C CNN
@@ -1364,7 +1335,20 @@ F 3 "" H 1900 4700 50  0001 C CNN
 	1    1900 4700
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1300 4500 0    50   Input ~ 0
+$Comp
+L power:GND #PWR?
+U 1 1 5E8EF227
+P 1900 4800
+AR Path="/5E8EF227" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DCD8E/5E8EF227" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 4550 50  0001 C CNN
+F 1 "GND" V 1905 4672 50  0000 R CNN
+F 2 "" H 1900 4800 50  0001 C CNN
+F 3 "" H 1900 4800 50  0001 C CNN
+	1    1900 4800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1300 4600 0    50   Input ~ 0
 PWR_GOOD
 Text Notes 2550 3400 0    50   ~ 0
 Additional PCIe 8-pin \npower connector\nfor additional 150W\n(75W if 6-pin connected)
@@ -1388,10 +1372,10 @@ Text Notes 2550 2700 0    50   ~ 0
 Additional PCIe 8-pin \npower connector\nfor additional 150W\n(75W if 6-pin connected)
 Text Notes 2600 1100 0    50   ~ 0
 Molex 5566 24-pin\nATX power connector\n(max 75W to SMPS)
-Text HLabel 1300 4300 0    50   Input ~ 0
+Text HLabel 1300 4400 0    50   Input ~ 0
 ENBL_A
 Wire Wire Line
-	1300 4300 1400 4300
+	1300 4400 1400 4400
 Text Notes 650  3850 0    50   ~ 0
 PINHEADER CONNECTIVITY
 Wire Notes Line
@@ -1489,4 +1473,275 @@ Wire Notes Line
 	2700 6400 2700 5150
 Wire Notes Line
 	2700 5150 650  5150
+$Comp
+L power:+5V #PWR?
+U 1 1 5EAB3AC5
+P 1400 4300
+F 0 "#PWR?" H 1400 4150 50  0001 C CNN
+F 1 "+5V" V 1415 4428 50  0000 L CNN
+F 2 "" H 1400 4300 50  0001 C CNN
+F 3 "" H 1400 4300 50  0001 C CNN
+	1    1400 4300
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1100 1800 0    50   Output ~ 0
+VSB
+Wire Wire Line
+	1100 1800 1400 1800
+Text HLabel 5700 1100 1    50   Input ~ 0
+VSB
+$Comp
+L power:GND #PWR?
+U 1 1 5EAB69BE
+P 5700 2600
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "GND" H 5705 2427 50  0000 C CNN
+F 2 "" H 5700 2600 50  0001 C CNN
+F 3 "" H 5700 2600 50  0001 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EAB7FAC
+P 5450 1250
+F 0 "C?" H 5336 1204 50  0000 R CNN
+F 1 "100nF" H 5336 1295 50  0000 R CNN
+F 2 "" H 5488 1100 50  0001 C CNN
+F 3 "~" H 5450 1250 50  0001 C CNN
+	1    5450 1250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EABB214
+P 5450 1100
+F 0 "#PWR?" H 5450 850 50  0001 C CNN
+F 1 "GND" H 5455 927 50  0000 C CNN
+F 2 "" H 5450 1100 50  0001 C CNN
+F 3 "" H 5450 1100 50  0001 C CNN
+	1    5450 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 1100 5700 1400
+Wire Wire Line
+	5450 1400 5700 1400
+Connection ~ 5700 1400
+Text HLabel 7550 1700 1    50   Output ~ 0
+PWR_ON
+Text HLabel 5100 1800 0    50   Input ~ 0
+PB
+Wire Wire Line
+	1400 4800 1300 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5EAC2319
+P 1900 4200
+AR Path="/5EAC2319" Ref="#PWR?"  Part="1" 
+AR Path="/5E8DCD8E/5EAC2319" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 3950 50  0001 C CNN
+F 1 "GND" V 1905 4072 50  0000 R CNN
+F 2 "" H 1900 4200 50  0001 C CNN
+F 3 "" H 1900 4200 50  0001 C CNN
+	1    1900 4200
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1300 4200 0    50   Output ~ 0
+SR
+Wire Wire Line
+	1300 4200 1400 4200
+Text HLabel 5100 1700 0    50   Input ~ 0
+SR
+$Comp
+L Device:R R?
+U 1 1 5EAC4266
+P 6550 1300
+F 0 "R?" H 6620 1346 50  0000 L CNN
+F 1 "10k" H 6620 1255 50  0000 L CNN
+F 2 "" V 6480 1300 50  0001 C CNN
+F 3 "~" H 6550 1300 50  0001 C CNN
+	1    6550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EAC5FFC
+P 6850 1300
+F 0 "R?" H 6920 1346 50  0000 L CNN
+F 1 "10k" H 6920 1255 50  0000 L CNN
+F 2 "" V 6780 1300 50  0001 C CNN
+F 3 "~" H 6850 1300 50  0001 C CNN
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EAC624A
+P 7150 1300
+F 0 "R?" H 7220 1346 50  0000 L CNN
+F 1 "10k" H 7220 1255 50  0000 L CNN
+F 2 "" V 7080 1300 50  0001 C CNN
+F 3 "~" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1150 7150 1050
+Wire Wire Line
+	7150 1050 6850 1050
+Wire Wire Line
+	6550 1050 6550 1150
+Wire Wire Line
+	6850 1150 6850 1050
+Connection ~ 6850 1050
+Wire Wire Line
+	6850 1050 6550 1050
+Wire Wire Line
+	6850 950  6850 1050
+$Comp
+L power:+5V #PWR?
+U 1 1 5EACC98C
+P 6850 950
+F 0 "#PWR?" H 6850 800 50  0001 C CNN
+F 1 "+5V" H 6865 1123 50  0000 C CNN
+F 2 "" H 6850 950 50  0001 C CNN
+F 3 "" H 6850 950 50  0001 C CNN
+	1    6850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1700 6550 1700
+Wire Wire Line
+	6550 1700 6550 1450
+Wire Wire Line
+	6300 1800 6850 1800
+Wire Wire Line
+	6850 1800 6850 1450
+Wire Wire Line
+	6300 2000 7150 2000
+Wire Wire Line
+	7150 2000 7150 1450
+$Comp
+L Device:C C?
+U 1 1 5EAD3D74
+P 6400 2500
+F 0 "C?" H 6285 2546 50  0000 R CNN
+F 1 "1µF" H 6285 2455 50  0000 R CNN
+F 2 "" H 6438 2350 50  0001 C CNN
+F 3 "~" H 6400 2500 50  0001 C CNN
+	1    6400 2500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2300 6300 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5EAD6179
+P 6400 2650
+F 0 "#PWR?" H 6400 2400 50  0001 C CNN
+F 1 "GND" H 6405 2477 50  0000 C CNN
+F 2 "" H 6400 2650 50  0001 C CNN
+F 3 "" H 6400 2650 50  0001 C CNN
+	1    6400 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 7100 2100 2    50   Input ~ 0
+VSB
+$Comp
+L Device:R R?
+U 1 1 5EAD63BE
+P 6850 2100
+F 0 "R?" H 6920 2146 50  0000 L CNN
+F 1 "10k" H 6920 2055 50  0000 L CNN
+F 2 "" V 6780 2100 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+	1    6850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EAD65D1
+P 6550 2100
+AR Path="/5EAD65D1" Ref="D?"  Part="1" 
+AR Path="/5E8DCD8E/5EAD65D1" Ref="D?"  Part="1" 
+F 0 "D?" V 6589 1982 50  0000 R CNN
+F 1 "LED" V 6498 1982 50  0000 R CNN
+F 2 "" H 6550 2100 50  0001 C CNN
+F 3 "~" H 6550 2100 50  0001 C CNN
+	1    6550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2300 6400 2350
+Wire Wire Line
+	6400 2100 6300 2100
+Wire Wire Line
+	7000 2100 7100 2100
+$Comp
+L Device:C C?
+U 1 1 5EAE1495
+P 4650 2500
+F 0 "C?" H 4765 2546 50  0000 L CNN
+F 1 "1µF" H 4765 2455 50  0000 L CNN
+F 2 "" H 4688 2350 50  0001 C CNN
+F 3 "~" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EAE1F76
+P 4650 2650
+F 0 "#PWR?" H 4650 2400 50  0001 C CNN
+F 1 "GND" H 4655 2477 50  0000 C CNN
+F 2 "" H 4650 2650 50  0001 C CNN
+F 3 "" H 4650 2650 50  0001 C CNN
+	1    4650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2350 4650 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5EAE4F17
+P 7550 2100
+F 0 "#PWR?" H 7550 1850 50  0001 C CNN
+F 1 "GND" H 7555 1927 50  0000 C CNN
+F 2 "" H 7550 2100 50  0001 C CNN
+F 3 "" H 7550 2100 50  0001 C CNN
+	1    7550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 5EAE75BE
+P 7450 1900
+F 0 "Q?" H 7641 1946 50  0000 L CNN
+F 1 "BC847" H 7641 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 1825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7450 1900 50  0001 L CNN
+	1    7450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1900 6300 1900
+Text HLabel 5000 2400 3    50   Output ~ 0
+PWR_GOOD
+Wire Wire Line
+	5000 2400 5000 2100
+Wire Wire Line
+	5000 2100 5100 2100
+Wire Wire Line
+	4650 2000 5100 2000
+Text Notes 4600 800  0    50   ~ 0
+STANDBY & SOFT START CONTROLLER
+Wire Notes Line
+	4500 2950 4500 650 
+Wire Notes Line
+	4500 650  7950 650 
+Wire Notes Line
+	7950 650  7950 2950
+Wire Notes Line
+	7950 2950 4500 2950
 $EndSCHEMATC
