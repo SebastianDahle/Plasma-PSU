@@ -414,105 +414,241 @@ D4 25 13 47 00 3A 32 0E 86 20 08 82 50 3C 6F 01 2C FB 7F 15 05 8B E8 3D 99 EC DE
 EndData
 $EndBitmap
 $Sheet
-S 1500 1000 1000 2500
+S 7700 1350 1000 2500
 U 5E8DCD8E
 F0 "Plugs_and_Controls" 50
 F1 "Plugs_and_Controls.sch" 50
-F2 "PLASMA_ON" O R 2500 1150 50 
-F3 "PLASMA_OFF" O R 2500 1300 50 
-F4 "ENBL_A" I R 2500 1900 50 
-F5 "VDD_IN" I R 2500 3250 50 
-F6 "GND_IN" I R 2500 3400 50 
-F7 "PWM_IN" I R 2500 1750 50 
+F2 "PLASMA_ON" O R 8700 1500 50 
+F3 "PLASMA_OFF" O R 8700 1650 50 
+F4 "ENBL_A" I R 8700 2250 50 
+F5 "VDD_IN" I R 8700 3600 50 
+F6 "GND_IN" I R 8700 3750 50 
+F7 "PWM_IN" I R 8700 2100 50 
 $EndSheet
 Wire Wire Line
-	3000 1750 2500 1750
+	9200 2100 8700 2100
 Wire Wire Line
-	3000 1900 2750 1900
+	9200 2250 8950 2250
 $Sheet
-S 3000 1500 1000 500 
+S 9200 1850 1000 500 
 U 5E8B09E3
 F0 "Controller" 50
 F1 "Controller.sch" 50
-F2 "CTRL_OUT" O R 4000 1900 50 
-F3 "ENBL_OUT" O L 3000 1900 50 
-F4 "I-Sense_IN" I R 4000 1750 50 
-F5 "U-Sense_IN" I R 4000 1600 50 
-F6 "PWM_OUT" O L 3000 1750 50 
+F2 "CTRL_OUT" O R 10200 2250 50 
+F3 "ENBL_OUT" O L 9200 2250 50 
+F4 "I-Sense_IN" I R 10200 2100 50 
+F5 "U-Sense_IN" I R 10200 1950 50 
+F6 "PWM_OUT" O L 9200 2100 50 
 $EndSheet
 Wire Wire Line
-	2500 3400 3000 3400
+	8700 3750 9200 3750
 Wire Wire Line
-	2500 3250 3000 3250
+	8700 3600 9200 3600
 Wire Wire Line
-	2750 1900 2750 2600
+	8950 2250 8950 2950
 Wire Wire Line
-	2750 2600 3000 2600
-Connection ~ 2750 1900
+	8950 2950 9200 2950
+Connection ~ 8950 2250
 Wire Wire Line
-	2750 1900 2500 1900
+	8950 2250 8700 2250
 Wire Wire Line
-	4000 1900 4100 1900
+	10200 2250 10300 2250
 Wire Wire Line
-	4100 1900 4100 2600
+	10300 2250 10300 2950
 Wire Wire Line
-	4100 2600 4000 2600
+	10300 2950 10200 2950
 Wire Wire Line
-	4000 1750 4200 1750
+	10200 2100 10400 2100
 Wire Wire Line
-	4200 1750 4200 2750
+	10400 2100 10400 3100
 Wire Wire Line
-	4200 2750 4000 2750
+	10400 3100 10200 3100
 Wire Wire Line
-	4000 1600 4300 1600
+	10200 1950 10500 1950
 Wire Wire Line
-	4300 1600 4300 2900
+	10500 1950 10500 3250
 Wire Wire Line
-	4300 2900 4000 2900
+	10500 3250 10200 3250
 Wire Notes Line
-	1400 850  1400 3700
+	7600 1200 7600 4050
 Wire Notes Line
-	4450 3700 4450 850 
+	10650 4050 10650 1200
 Wire Notes Line
-	4450 850  1400 850 
+	10650 1200 7600 1200
 Wire Notes Line
-	1400 3700 4450 3700
-Text Notes 2900 5450 0    50   ~ 0
-HV stage connectors:\n- Power input 5-40V\n- Enable\n- Molex 8981 (12V & 5V supplies)\n- PWM signal
-Text Notes 1550 4900 0    50   ~ 0
+	7600 4050 10650 4050
+Text Notes 9100 5800 0    50   ~ 0
+HV stage connectors:\n- Power input 5-40V\n- Enable\n- PWM signal
+Text Notes 7750 5250 0    50   ~ 0
 HV stage on separate \nPCB to avoid EMI \nfrom transformer
 $Sheet
-S 1500 4550 1000 500 
+S 7700 4900 1000 500 
 U 5E8AFD35
 F0 "Flyback_HV_stage" 50
 F1 "Flyback_HV_stage.sch" 50
 $EndSheet
 Wire Notes Line
-	1400 4400 4450 4400
+	7600 4750 10650 4750
 Wire Notes Line
-	4450 4400 4450 5600
+	10650 4750 10650 5950
 Wire Notes Line
-	4450 5600 1400 5600
+	10650 5950 7600 5950
 Wire Notes Line
-	1400 5600 1400 4400
-Text Notes 3600 1050 0    50   ~ 0
+	7600 5950 7600 4750
+Text Notes 9800 1400 0    50   ~ 0
 PCB__A\nlow voltage circuitry
-Text Notes 3500 4600 0    50   ~ 0
+Text Notes 9700 4950 0    50   ~ 0
 PCB__B\nhigh voltage generation
 Wire Notes Line
-	2000 4400 2000 3700
+	8200 4750 8200 4050
 Wire Notes Line
-	2050 4400 2050 3700
+	8250 4750 8250 4050
 $Sheet
-S 3000 2500 1000 1000
+S 9200 2850 1000 1000
 U 5E8B038E
 F0 "SMPS-12-36" 50
 F1 "SMPS-12-36.sch" 50
-F2 "VDD_OUT" O L 3000 3250 50 
-F3 "GND_OUT" O L 3000 3400 50 
-F4 "CTRL_IN" I R 4000 2600 50 
-F5 "ENBL_IN" I L 3000 2600 50 
-F6 "I-Sense_OUT" O R 4000 2750 50 
-F7 "U-Sense_OUT" O R 4000 2900 50 
+F2 "VDD_OUT" O L 9200 3600 50 
+F3 "GND_OUT" O L 9200 3750 50 
+F4 "CTRL_IN" I R 10200 2950 50 
+F5 "ENBL_IN" I L 9200 2950 50 
+F6 "I-Sense_OUT" O R 10200 3100 50 
+F7 "U-Sense_OUT" O R 10200 3250 50 
 $EndSheet
+Text Notes 1200 2200 0    50   ~ 0
+ATX\nPOWER SUPPLY
+Text Notes 2050 2550 0    50   ~ 0
+SOFT-START IC
+Text Notes 3050 1750 0    50   ~ 0
+BOOST MODULE
+Text Notes 3400 2550 0    50   ~ 0
+ARDUINO
+Text Notes 3100 2150 0    50   ~ 0
+DAC
+Text Notes 4350 1800 0    50   ~ 0
+FLYBACK\nDRIVER
+Text Notes 4900 1800 0    50   ~ 0
+HV  FLYBACK\nTRANSFORMER
+Wire Notes Line style solid
+	4850 1600 4850 1850
+Wire Notes Line style solid
+	4850 1850 5500 1850
+Wire Notes Line style solid
+	5500 1850 5500 1600
+Wire Notes Line style solid
+	5500 1600 4850 1600
+Wire Notes Line style solid
+	4300 1600 4300 1850
+Wire Notes Line style solid
+	4300 1850 4750 1850
+Wire Notes Line style solid
+	4750 1850 4750 1600
+Wire Notes Line style solid
+	4750 1600 4300 1600
+Wire Notes Line
+	4750 1700 4850 1700
+Wire Notes Line style solid
+	3450 2000 3450 2250
+Wire Notes Line style solid
+	3450 2000 3000 2000
+Wire Notes Line style solid
+	3000 2000 3000 2250
+Wire Notes Line style solid
+	3000 2250 3450 2250
+Wire Notes Line style solid
+	3350 2400 3350 2650
+Wire Notes Line style solid
+	3350 2650 3800 2650
+Wire Notes Line style solid
+	3800 2650 3800 2400
+Wire Notes Line style solid
+	3800 2400 3350 2400
+Wire Notes Line style solid
+	3000 1600 3000 1850
+Wire Notes Line style solid
+	3700 1600 3700 1850
+Wire Notes Line style solid
+	3000 1600 3700 1600
+Wire Notes Line style solid
+	3000 1850 3700 1850
+Wire Notes Line style solid
+	2700 2400 2700 2650
+Wire Notes Line style solid
+	2700 2650 1950 2650
+Wire Notes Line style solid
+	1950 2650 1950 2400
+Wire Notes Line style solid
+	1950 2400 2700 2400
+Wire Notes Line style solid
+	1850 2000 1850 2250
+Wire Notes Line style solid
+	1850 2250 1150 2250
+Wire Notes Line style solid
+	1150 2250 1150 2000
+Wire Notes Line style solid
+	1150 2000 1850 2000
+Wire Notes Line
+	2800 1700 3000 1700
+Wire Notes Line
+	2550 2400 2550 2100
+Wire Notes Line
+	3400 2400 3400 2250
+Wire Notes Line
+	3250 2000 3250 1850
+Text Notes 3250 1950 0    25   Italic 0
+set U
+Wire Notes Line
+	3600 1850 3600 2400
+Text Notes 3600 1950 0    25   Italic 0
+sense U, I
+Wire Notes Line
+	5500 1700 5650 1700
+Wire Notes Line
+	3700 1700 4300 1700
+Text Notes 2400 2100 0    25   Italic 0
+12V, 5V, GND
+Text Notes 3950 1700 0    25   Italic 0
+12-36V\n0-15A
+Wire Notes Line
+	3700 2400 3700 2100
+Wire Notes Line
+	3700 2100 4450 2100
+Wire Notes Line
+	4450 2100 4450 1850
+Text Notes 3950 2100 0    25   Italic 0
+PWM (f,d%)
+Wire Notes Line
+	5650 1700 5650 1550
+Text Notes 5600 1550 0    25   Italic 0
+HV out
+Wire Notes Line
+	2800 2500 3350 2500
+Wire Notes Line
+	2800 1700 2800 2500
+Text Notes 1950 3000 0    50   Italic 10
+PCB A -- \nlow voltage circuits
+Wire Notes Line
+	1850 2100 2800 2100
+Wire Notes Line style dotted
+	3900 1450 1900 1450
+Wire Notes Line style dotted
+	1900 1450 1900 3050
+Wire Notes Line style dotted
+	1900 3050 3900 3050
+Text Notes 4250 3000 0    50   Italic 10
+PCB B -- \nhigh voltage generation
+Wire Notes Line style dotted
+	4200 1450 5550 1450
+Wire Notes Line style dotted
+	5550 1450 5550 3050
+Wire Notes Line style dotted
+	5550 3050 4200 3050
+Wire Notes Line style dotted
+	4200 3050 4200 1450
+Wire Notes Line style dotted
+	3900 1450 3900 3050
+Text Notes 1900 1150 0    50   Italic 10
+BLOCK DIAGRAM
+Wire Notes Line style solid
+	1900 1150 2550 1150
 $EndSCHEMATC
