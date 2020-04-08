@@ -25,8 +25,6 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5500 2800 50
 	1    5500 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 6400 3700 3    50   Output ~ 0
-CTRL_OUT
 Text HLabel 4750 3600 3    50   Output ~ 0
 ENBL_OUT
 Text HLabel 5300 4350 0    50   Input ~ 0
@@ -63,7 +61,7 @@ Connection ~ 5600 3800
 Wire Wire Line
 	5600 3800 5500 3800
 Text Notes 750  1300 0    50   ~ 0
-Configuration:\nPWM via timer1 on D8 / pin11)\nENBL signal on D9 / pin 12\nCTRL signal towards SMPS on A0 / pin 19\nU sensing on A6 / pin 25\nI sensing on A7 / pin 26\nUART on D0 & D1 / pin 2 & 1\nI2C signal on A4 & A5 / pin 23 & 24
+Configuration:\nPWM via timer1 on D8 / pin11)\nENBL signal on D9 / pin 12\nU-CTRL via SPI with CS on pin 8\nU sensing on A6 / pin 25\nI sensing on A7 / pin 26\nUART on D0 & D1 / pin 2 & 1\nI2C signal on A4 & A5 / pin 23 & 24
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5E93DA08
@@ -573,8 +571,6 @@ Wire Wire Line
 	6000 3500 6200 3500
 Wire Wire Line
 	6000 3400 6300 3400
-Wire Wire Line
-	6000 2800 6400 2800
 Text HLabel 4900 3600 3    50   Input ~ 0
 D13_16
 Wire Wire Line
@@ -626,9 +622,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3000 7750 3000
 Wire Wire Line
-	6400 2800 7750 2800
-Connection ~ 6400 2800
-Wire Wire Line
 	6850 2700 7750 2700
 Wire Wire Line
 	5600 1500 7600 1500
@@ -662,17 +655,6 @@ Wire Wire Line
 	5400 1700 5400 1800
 Wire Wire Line
 	7500 1600 7500 3600
-$Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 5EA74613
-P 3850 4600
-F 0 "J?" V 3722 4212 50  0000 R CNN
-F 1 "SPI" V 3813 4212 50  0000 R CNN
-F 2 "" H 3850 4600 50  0001 C CNN
-F 3 "~" H 3850 4600 50  0001 C CNN
-	1    3850 4600
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	4700 1400 4700 2100
 Wire Wire Line
@@ -694,8 +676,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 2600 5000 2600
 Wire Wire Line
-	3300 2700 5000 2700
-Wire Wire Line
 	3300 2800 5000 2800
 Wire Wire Line
 	3300 2900 5000 2900
@@ -705,30 +685,6 @@ Connection ~ 4650 3000
 Wire Wire Line
 	3300 3100 4750 3100
 Connection ~ 4750 3100
-Wire Wire Line
-	3300 3200 3850 3200
-$Comp
-L power:GND #PWR?
-U 1 1 5EA92261
-P 3650 4400
-F 0 "#PWR?" H 3650 4150 50  0001 C CNN
-F 1 "GND" V 3655 4272 50  0000 R CNN
-F 2 "" H 3650 4400 50  0001 C CNN
-F 3 "" H 3650 4400 50  0001 C CNN
-	1    3650 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5EA927CA
-P 3750 4400
-F 0 "#PWR?" H 3750 4250 50  0001 C CNN
-F 1 "+5V" V 3765 4528 50  0000 L CNN
-F 2 "" H 3750 4400 50  0001 C CNN
-F 3 "" H 3750 4400 50  0001 C CNN
-	1    3750 4400
-	1    0    0    -1  
-$EndComp
 Text Notes 7500 5250 2    50   ~ 0
 I2C\n\nSCL\nSDA\n+5V\nGND
 $Comp
@@ -790,36 +746,7 @@ F 3 "" H 7100 5250 50  0001 C CNN
 	1    7100 5250
 	1    0    0    -1  
 $EndComp
-Text Notes 3400 4900 2    50   ~ 0
-SPI\n\nSCK\nMISO\nMOSI\nCS\n+5V\nGND
-Wire Wire Line
-	3850 4400 3850 3200
-Connection ~ 3850 3200
-Wire Wire Line
-	3850 3200 5000 3200
-Wire Wire Line
-	3300 3400 4050 3400
-Wire Wire Line
-	3300 3300 3950 3300
-Wire Wire Line
-	3950 4400 3950 3300
-Connection ~ 3950 3300
-Wire Wire Line
-	3950 3300 5000 3300
-Wire Wire Line
-	4050 4400 4050 3400
-Connection ~ 4050 3400
-Wire Wire Line
-	4050 3400 5000 3400
-Wire Wire Line
-	4900 3500 4150 3500
-Wire Wire Line
-	4150 3500 4150 4400
 Connection ~ 4900 3500
-Text Notes 9000 1000 0    50   ~ 0
-TODO DAC for CTRL
-Wire Wire Line
-	6400 3700 6400 2800
 $Comp
 L Device:R R?
 U 1 1 5E90D904
@@ -904,4 +831,98 @@ Wire Wire Line
 	5850 4350 6200 4350
 Wire Wire Line
 	6050 4700 6300 4700
+Wire Wire Line
+	4900 3500 4150 3500
+Connection ~ 4050 3400
+Connection ~ 3950 3300
+Wire Wire Line
+	3950 3300 5000 3300
+Wire Wire Line
+	3300 3300 3950 3300
+Wire Wire Line
+	4050 3400 5000 3400
+Wire Wire Line
+	3300 3400 4050 3400
+Connection ~ 3850 3200
+Wire Wire Line
+	3850 3200 5000 3200
+Wire Wire Line
+	3300 3200 3850 3200
+Text Notes 3400 5250 2    50   ~ 0
+SPI\n\nSCK\nMISO\nMOSI\nCS\n+5V\nGND
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA927CA
+P 3750 5000
+F 0 "#PWR?" H 3750 4850 50  0001 C CNN
+F 1 "+5V" V 3765 5128 50  0000 L CNN
+F 2 "" H 3750 5000 50  0001 C CNN
+F 3 "" H 3750 5000 50  0001 C CNN
+	1    3750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA92261
+P 3650 5000
+F 0 "#PWR?" H 3650 4750 50  0001 C CNN
+F 1 "GND" V 3655 4872 50  0000 R CNN
+F 2 "" H 3650 5000 50  0001 C CNN
+F 3 "" H 3650 5000 50  0001 C CNN
+	1    3650 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5EA74613
+P 3850 5200
+F 0 "J?" V 3722 4812 50  0000 R CNN
+F 1 "SPI" V 3813 4812 50  0000 R CNN
+F 2 "" H 3850 5200 50  0001 C CNN
+F 3 "~" H 3850 5200 50  0001 C CNN
+	1    3850 5200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4150 3500 4150 4000
+Wire Wire Line
+	4050 3400 4050 4100
+Connection ~ 4150 4000
+Wire Wire Line
+	4150 4000 4150 5000
+Wire Wire Line
+	3600 4000 4150 4000
+Wire Wire Line
+	3950 3300 3950 4200
+Text HLabel 3600 4000 0    50   Output ~ 0
+SPI-SCK
+Text HLabel 3600 4100 0    50   Input ~ 0
+SPI-MISO
+Text HLabel 3600 4200 0    50   Output ~ 0
+SPI-MOSI
+Text HLabel 3600 4300 0    50   Output ~ 0
+SPI-CS
+Wire Wire Line
+	3850 3200 3850 5000
+Wire Wire Line
+	3300 2700 3750 2700
+Wire Wire Line
+	3750 2700 3750 4300
+Wire Wire Line
+	3750 4300 3600 4300
+Connection ~ 3750 2700
+Wire Wire Line
+	3750 2700 5000 2700
+Wire Wire Line
+	4050 4100 3600 4100
+Connection ~ 4050 4100
+Wire Wire Line
+	4050 4100 4050 5000
+Wire Wire Line
+	3600 4200 3950 4200
+Connection ~ 3950 4200
+Wire Wire Line
+	3950 4200 3950 5000
+Wire Wire Line
+	6000 2800 7750 2800
 $EndSCHEMATC
