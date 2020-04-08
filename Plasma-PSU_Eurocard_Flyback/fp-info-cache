@@ -1,4 +1,4 @@
-15945081446040259
+15943497634145936
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -61740,19 +61740,12 @@ HF-HV_Transformer_15kV_300W
 4
 4
 Plasma-PSU_Eurocard_Flyback
-RD_DPS5015
+ONSEMI-µ8FL
 
 
 0
-8
-4
-Plasma-PSU_Eurocard_Flyback
-Step_up_1200W_20A
-
-
-0
-8
-4
+16
+3
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf

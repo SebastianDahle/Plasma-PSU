@@ -711,4 +711,6 @@ Wire Notes Line
 	7600 5950 10750 5950
 Text Notes 700  6700 0    50   ~ 0
 NOTES\n-----\nBoost regulator has internal Vref=1.2V. Therefore set DAC VoutB=1.2V.\nDAC VoutA maps directly N=0...4095 to Uset=0...36V.\nDAC CS via Arduino pin 8.
+Text Notes 800  4650 0    50   ~ 0
+TODO SELECT SMPS FETS\nTODO SELECT SMPS SHUNT
 $EndSCHEMATC

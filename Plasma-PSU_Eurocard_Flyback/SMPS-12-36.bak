@@ -191,28 +191,6 @@ F 3 "" H 3400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GSD Q?
-U 1 1 5E952E7F
-P 5600 1550
-F 0 "Q?" V 5942 1550 50  0000 C CNN
-F 1 "Q_NMOS_GSD" V 5851 1550 50  0000 C CNN
-F 2 "" H 5800 1650 50  0001 C CNN
-F 3 "~" H 5600 1550 50  0001 C CNN
-	1    5600 1550
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Q_NMOS_GSD Q?
-U 1 1 5E953579
-P 5200 2700
-F 0 "Q?" H 5404 2746 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 5404 2655 50  0000 L CNN
-F 2 "" H 5400 2800 50  0001 C CNN
-F 3 "~" H 5200 2700 50  0001 C CNN
-	1    5200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L L?
 U 1 1 5E95A7FC
 P 3400 1450
@@ -381,7 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 1800 5600 1800
 Wire Wire Line
-	5950 3250 5950 1650
+	6000 3250 6000 1650
 Wire Wire Line
 	800  1200 800  1100
 Text HLabel 2700 2850 0    50   Input ~ 0
@@ -439,9 +417,6 @@ F 3 "~" H 8050 1550 50  0001 C CNN
 	1    8050 1550
 	1    0    0    -1  
 $EndComp
-Connection ~ 5950 1650
-Wire Wire Line
-	5300 3250 5950 3250
 Text Notes 5350 7650 0    50   ~ 0
 Vout(max) = 36V;  Vout(typ) = 24V\nIout(max) = 20A;   Iout(typ) = 12A\ndI(max,soll)% = 15%  inductance ripple\ndI = Vin/(f*L) * (1 - Vin/Vout)\n=> L = 10 µH (+/-10%)
 $Comp
@@ -641,7 +616,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 1650 7650 1650
 Wire Wire Line
-	5950 1650 6350 1650
+	5950 1650 6000 1650
 Wire Wire Line
 	5950 1450 6350 1450
 Wire Wire Line
@@ -1555,7 +1530,7 @@ L Device:R_Shunt R?
 U 1 1 5E8C5243
 P 10350 1750
 F 0 "R?" V 10125 1750 50  0000 C CNN
-F 1 "R_Shunt" V 10216 1750 50  0000 C CNN
+F 1 "1mR (1206)" V 10216 1750 50  0000 C CNN
 F 2 "" V 10280 1750 50  0001 C CNN
 F 3 "~" H 10350 1750 50  0001 C CNN
 	1    10350 1750
@@ -1628,4 +1603,31 @@ Wire Wire Line
 Connection ~ 8950 1750
 Text Notes 6150 4950 0    50   Italic 0
 Route away \nfrom noise!!
+$Comp
+L Device:Q_NMOS_SGD Q?
+U 1 1 5E9117BD
+P 5200 2700
+F 0 "Q?" H 5404 2746 50  0000 L CNN
+F 1 "NVTFS6H850NL" H 5404 2655 50  0000 L CNN
+F 2 "" H 5400 2800 50  0001 C CNN
+F 3 "~" H 5200 2700 50  0001 C CNN
+	1    5200 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 1650
+Wire Wire Line
+	6000 1650 6350 1650
+Wire Wire Line
+	5300 3250 6000 3250
+$Comp
+L Device:Q_NMOS_SGD Q?
+U 1 1 5E92209C
+P 5600 1550
+F 0 "Q?" V 5942 1550 50  0000 C CNN
+F 1 "NVTFS6H850NL" V 5851 1550 50  0000 C CNN
+F 2 "" H 5800 1650 50  0001 C CNN
+F 3 "~" H 5600 1550 50  0001 C CNN
+	1    5600 1550
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
