@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Plasma-PSU_Eurocard_Flyback"
-Date "2020-04-07"
-Rev "0.0.3"
+Date "2020-04-08"
+Rev "0.0.4"
 Comp "University of Ljubljana"
 Comment1 "Biotechnical faculty"
 Comment2 "Plasma Center"
@@ -25,15 +25,15 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5500 2800 50
 	1    5500 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 6400 4200 3    50   Output ~ 0
+Text HLabel 6400 3700 3    50   Output ~ 0
 CTRL_OUT
 Text HLabel 4750 3600 3    50   Output ~ 0
 ENBL_OUT
-Text HLabel 6200 4200 3    50   Input ~ 0
+Text HLabel 5300 4350 0    50   Input ~ 0
 I-Sense_IN
 Text HLabel 4650 3600 3    50   Output ~ 0
 PWM_OUT
-Text HLabel 6300 4200 3    50   Input ~ 0
+Text HLabel 5300 4700 0    50   Input ~ 0
 U-Sense_IN
 $Comp
 L power:+5V #PWR?
@@ -570,15 +570,9 @@ F 3 "~" H 7950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 4200 6200 3500
-Wire Wire Line
 	6000 3500 6200 3500
 Wire Wire Line
-	6300 4200 6300 3400
-Wire Wire Line
 	6000 3400 6300 3400
-Wire Wire Line
-	6400 4200 6400 2800
 Wire Wire Line
 	6000 2800 6400 2800
 Text HLabel 4900 3600 3    50   Input ~ 0
@@ -823,5 +817,91 @@ Wire Wire Line
 	4150 3500 4150 4400
 Connection ~ 4900 3500
 Text Notes 9000 1000 0    50   ~ 0
-TODO Filters for U-sense and I-sense\nTODO DAC for CTRL
+TODO DAC for CTRL
+Wire Wire Line
+	6400 3700 6400 2800
+$Comp
+L Device:R R?
+U 1 1 5E90D904
+P 5550 4350
+F 0 "R?" V 5343 4350 50  0000 C CNN
+F 1 "4.8k" V 5434 4350 50  0000 C CNN
+F 2 "" V 5480 4350 50  0001 C CNN
+F 3 "~" H 5550 4350 50  0001 C CNN
+	1    5550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E90DE41
+P 5550 4700
+F 0 "R?" V 5343 4700 50  0000 C CNN
+F 1 "4.8k" V 5434 4700 50  0000 C CNN
+F 2 "" V 5480 4700 50  0001 C CNN
+F 3 "~" H 5550 4700 50  0001 C CNN
+	1    5550 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 4350 5300 4350
+Wire Wire Line
+	5300 4700 5400 4700
+Wire Wire Line
+	6200 3500 6200 4350
+Wire Wire Line
+	6300 3400 6300 4700
+$Comp
+L Device:C C?
+U 1 1 5E9180BC
+P 5850 4950
+F 0 "C?" H 5735 4904 50  0000 R CNN
+F 1 "100n" H 5735 4995 50  0000 R CNN
+F 2 "" H 5888 4800 50  0001 C CNN
+F 3 "~" H 5850 4950 50  0001 C CNN
+	1    5850 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9189A9
+P 6050 4950
+F 0 "C?" H 6165 4996 50  0000 L CNN
+F 1 "100n" H 6165 4905 50  0000 L CNN
+F 2 "" H 6088 4800 50  0001 C CNN
+F 3 "~" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4700 6050 4700
+Wire Wire Line
+	5700 4350 5850 4350
+Wire Wire Line
+	5850 4800 5850 4350
+Wire Wire Line
+	6050 4800 6050 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5E92882A
+P 5950 5200
+F 0 "#PWR?" H 5950 4950 50  0001 C CNN
+F 1 "GND" V 5955 5072 50  0000 R CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5100 5950 5100
+Wire Wire Line
+	5950 5200 5950 5100
+Connection ~ 5950 5100
+Wire Wire Line
+	5950 5100 6050 5100
+Connection ~ 5850 4350
+Connection ~ 6050 4700
+Wire Wire Line
+	5850 4350 6200 4350
+Wire Wire Line
+	6050 4700 6300 4700
 $EndSCHEMATC

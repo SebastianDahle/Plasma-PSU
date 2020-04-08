@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "Plasma-PSU_Eurocard_Flyback"
-Date "2020-04-07"
-Rev "0.0.3"
+Date "2020-04-08"
+Rev "0.0.4"
 Comp "University of Ljubljana"
 Comment1 "Biotechnical faculty"
 Comment2 "Plasma Center"

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "Plasma-PSU_Eurocard_Flyback"
-Date "2020-04-07"
-Rev "0.0.3"
+Date "2020-04-08"
+Rev "0.0.4"
 Comp "University of Ljubljana"
 Comment1 "Biotechnical faculty"
 Comment2 "Plasma Center"
@@ -191,12 +191,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:MCP602 U?
 U 2 1 5E8D15DA
-P 5550 1700
-F 0 "U?" H 5550 2067 50  0000 C CNN
-F 1 "MCP602" H 5550 1976 50  0000 C CNN
-F 2 "" H 5550 1700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5550 1700 50  0001 C CNN
-	2    5550 1700
+P 9550 5650
+F 0 "U?" H 9550 6017 50  0000 C CNN
+F 1 "MCP602" H 9550 5926 50  0000 C CNN
+F 2 "" H 9550 5650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 9550 5650 50  0001 C CNN
+	2    9550 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -556,8 +556,6 @@ ENBL_IN
 Wire Wire Line
 	6150 4750 4900 4750
 Connection ~ 6150 4750
-Text Notes 8650 1250 0    50   ~ 0
-TODO include CTRL_IN via MCP602_B\nTODO revise I sense op amp gain
 $Comp
 L Device:D_Zener D?
 U 1 1 5EAB3FD6

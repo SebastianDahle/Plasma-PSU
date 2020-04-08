@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "Plasma-PSU_Eurocard_Flyback"
-Date "2020-04-07"
-Rev "0.0.3"
+Date "2020-04-08"
+Rev "0.0.4"
 Comp "University of Ljubljana"
 Comment1 "Biotechnical faculty"
 Comment2 "Plasma Center"
@@ -525,28 +525,28 @@ Text Notes 3400 2550 0    50   ~ 0
 ARDUINO
 Text Notes 3100 2150 0    50   ~ 0
 DAC
-Text Notes 4350 1800 0    50   ~ 0
+Text Notes 5250 1800 0    50   ~ 0
 FLYBACK\nDRIVER
-Text Notes 4900 1800 0    50   ~ 0
+Text Notes 5800 1800 0    50   ~ 0
 HV  FLYBACK\nTRANSFORMER
 Wire Notes Line style solid
-	4850 1600 4850 1850
+	5750 1600 5750 1850
 Wire Notes Line style solid
-	4850 1850 5500 1850
+	5750 1850 6400 1850
 Wire Notes Line style solid
-	5500 1850 5500 1600
+	6400 1850 6400 1600
 Wire Notes Line style solid
-	5500 1600 4850 1600
+	6400 1600 5750 1600
 Wire Notes Line style solid
-	4300 1600 4300 1850
+	5200 1600 5200 1850
 Wire Notes Line style solid
-	4300 1850 4750 1850
+	5200 1850 5650 1850
 Wire Notes Line style solid
-	4750 1850 4750 1600
+	5650 1850 5650 1600
 Wire Notes Line style solid
-	4750 1600 4300 1600
-Wire Notes Line
-	4750 1700 4850 1700
+	5650 1600 5200 1600
+Wire Notes Line width 10
+	5650 1700 5750 1700
 Wire Notes Line style solid
 	3450 2000 3450 2250
 Wire Notes Line style solid
@@ -587,68 +587,100 @@ Wire Notes Line style solid
 	1150 2250 1150 2000
 Wire Notes Line style solid
 	1150 2000 1850 2000
-Wire Notes Line
+Wire Notes Line width 10
 	2800 1700 3000 1700
-Wire Notes Line
-	2550 2400 2550 2100
 Wire Notes Line
 	3400 2400 3400 2250
 Wire Notes Line
 	3250 2000 3250 1850
-Text Notes 3250 1950 0    25   Italic 0
+Text Notes 3250 1900 0    25   Italic 0
 set U
 Wire Notes Line
 	3600 1850 3600 2400
-Text Notes 3600 1950 0    25   Italic 0
+Text Notes 3600 1900 0    25   Italic 0
 sense U, I
 Wire Notes Line
-	5500 1700 5650 1700
-Wire Notes Line
-	3700 1700 4300 1700
-Text Notes 2400 2100 0    25   Italic 0
-12V, 5V, GND
-Text Notes 3950 1700 0    25   Italic 0
+	6400 1700 6550 1700
+Wire Notes Line width 10
+	4600 1700 5200 1700
+Text Notes 4850 1700 0    25   Italic 0
 12-36V\n0-15A
 Wire Notes Line
-	3700 2400 3700 2100
+	4600 2100 5350 2100
 Wire Notes Line
-	3700 2100 4450 2100
-Wire Notes Line
-	4450 2100 4450 1850
-Text Notes 3950 2100 0    25   Italic 0
+	5350 2100 5350 1850
+Text Notes 4850 2100 0    25   Italic 0
 PWM (f,d%)
 Wire Notes Line
-	5650 1700 5650 1550
-Text Notes 5600 1550 0    25   Italic 0
+	6550 1700 6550 1550
+Text Notes 6500 1550 0    25   Italic 0
 HV out
 Wire Notes Line
 	2800 2500 3350 2500
-Wire Notes Line
-	2800 1700 2800 2500
 Text Notes 1950 3000 0    50   Italic 10
 PCB A -- \nlow voltage circuits
-Wire Notes Line
+Wire Notes Line width 10
 	1850 2100 2800 2100
 Wire Notes Line style dotted
-	3900 1450 1900 1450
-Wire Notes Line style dotted
 	1900 1450 1900 3050
-Wire Notes Line style dotted
-	1900 3050 3900 3050
-Text Notes 4250 3000 0    50   Italic 10
+Text Notes 5150 3000 0    50   Italic 10
 PCB B -- \nhigh voltage generation
 Wire Notes Line style dotted
-	4200 1450 5550 1450
+	5100 1450 6450 1450
 Wire Notes Line style dotted
-	5550 1450 5550 3050
+	6450 1450 6450 3050
 Wire Notes Line style dotted
-	5550 3050 4200 3050
+	6450 3050 5100 3050
 Wire Notes Line style dotted
-	4200 3050 4200 1450
+	5100 3050 5100 1450
 Wire Notes Line style dotted
-	3900 1450 3900 3050
+	4750 1450 4750 3050
 Text Notes 1900 1150 0    50   Italic 10
 BLOCK DIAGRAM
 Wire Notes Line style solid
 	1900 1150 2550 1150
+Text Notes 4000 1800 0    50   ~ 0
+SELF-HOLDING\nLATCH
+Wire Notes Line style solid
+	3950 1600 3950 1850
+Wire Notes Line style solid
+	4600 1850 4600 1600
+Wire Notes Line style solid
+	3950 1850 4600 1850
+Wire Notes Line style solid
+	3950 1600 4600 1600
+Text Notes 3750 1700 0    25   Italic 0
+12-36V\n0-15A
+Text Notes 4050 2500 0    25   Italic 0
+PWM (f,d%)
+Wire Notes Line
+	3800 2500 4600 2500
+Wire Notes Line
+	4600 2100 4600 2500
+Wire Notes Line
+	3700 2400 3700 2000
+Wire Notes Line
+	3700 2000 5250 2000
+Wire Notes Line
+	5250 2000 5250 1850
+Wire Notes Line
+	4500 2000 4500 1850
+Text Notes 4350 2000 0    25   Italic 0
+enable
+Text Notes 4850 2000 0    25   Italic 0
+enable
+Wire Notes Line style dotted
+	4750 1450 1900 1450
+Wire Notes Line style dotted
+	1900 3050 4750 3050
+Wire Notes Line width 10
+	3700 1700 3950 1700
+Text Notes 2400 2100 0    25   Italic 0
+12V, 5V, GND
+Wire Notes Line
+	2550 2400 2550 2100
+Wire Notes Line width 10
+	2800 2100 2800 1700
+Wire Notes Line
+	2800 2500 2800 2100
 $EndSCHEMATC
