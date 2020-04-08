@@ -30,10 +30,10 @@ Wire Wire Line
 Wire Wire Line
 	6050 3350 6050 3400
 $Comp
-L Device:D D?
+L Device:D D405
 U 1 1 5E7B9455
 P 6050 3550
-F 0 "D?" V 6004 3630 50  0000 L CNN
+F 0 "D405" V 6004 3630 50  0000 L CNN
 F 1 "UF4007" V 6095 3630 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 6050 3550 50  0001 C CNN
 F 3 "~" H 6050 3550 50  0001 C CNN
@@ -51,10 +51,10 @@ Wire Wire Line
 Wire Wire Line
 	5300 3550 5300 3600
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D404
 U 1 1 5E7B4AF6
 P 5300 3750
-F 0 "D?" V 5254 3830 50  0000 L CNN
+F 0 "D404" V 5254 3830 50  0000 L CNN
 F 1 "ZD20" V 5345 3830 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5300 3750 50  0001 C CNN
 F 3 "~" H 5300 3750 50  0001 C CNN
@@ -69,10 +69,10 @@ Connection ~ 4350 3750
 Wire Wire Line
 	4350 3750 4350 3800
 $Comp
-L Device:D_Zener D?
+L Device:D_Zener D403
 U 1 1 5E7B18A3
 P 4350 3950
-F 0 "D?" V 4304 4030 50  0000 L CNN
+F 0 "D403" V 4304 4030 50  0000 L CNN
 F 1 "ZD5" V 4395 4030 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4350 3950 50  0001 C CNN
 F 3 "~" H 4350 3950 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "~" H 4350 3950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:TIP41C Q?
+L Transistor_BJT:TIP41C Q402
 U 1 1 5E7A1948
 P 4550 3350
-F 0 "Q?" H 4741 3396 50  0000 L CNN
+F 0 "Q402" H 4741 3396 50  0000 L CNN
 F 1 "TIP41C" H 4741 3305 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4800 3275 50  0001 L CIN
 F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 4550 3350 50  0001 L CNN
@@ -91,10 +91,10 @@ F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=p
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:TIP42C Q?
+L Transistor_BJT:TIP42C Q403
 U 1 1 5E7A21D7
 P 4550 3750
-F 0 "Q?" H 4741 3796 50  0000 L CNN
+F 0 "Q403" H 4741 3796 50  0000 L CNN
 F 1 "TIP42C" H 4741 3705 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4800 3675 50  0001 L CIN
 F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 4550 3750 50  0001 L CNN
@@ -102,10 +102,10 @@ F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=p
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R406
 U 1 1 5E7A4876
 P 5150 3550
-F 0 "R?" V 4943 3550 50  0000 C CNN
+F 0 "R406" V 4943 3550 50  0000 C CNN
 F 1 "4R7" V 5034 3550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5080 3550 50  0001 C CNN
 F 3 "~" H 5150 3550 50  0001 C CNN
@@ -113,10 +113,10 @@ F 3 "~" H 5150 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R405
 U 1 1 5E7AAF46
 P 4350 3200
-F 0 "R?" V 4143 3200 50  0000 C CNN
+F 0 "R405" V 4143 3200 50  0000 C CNN
 F 1 "300R" V 4234 3200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4280 3200 50  0001 C CNN
 F 3 "~" H 4350 3200 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "~" H 4350 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q405
 U 1 1 5E7A6C24
 P 5500 3550
-F 0 "Q?" H 5704 3596 50  0000 L CNN
+F 0 "Q405" H 5704 3596 50  0000 L CNN
 F 1 "IPW60" H 5704 3505 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5700 3650 50  0001 C CNN
 F 3 "~" H 5500 3550 50  0001 C CNN
@@ -135,10 +135,10 @@ F 3 "~" H 5500 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Triac_Thyristor:BT169B Q?
+L Triac_Thyristor:BT169B Q404
 U 1 1 5E780005
 P 4650 2800
-F 0 "Q?" H 4738 2846 50  0000 L CNN
+F 0 "Q404" H 4738 2846 50  0000 L CNN
 F 1 "BT169B" H 4738 2755 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4750 2725 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf" H 4650 2800 50  0001 L CNN
@@ -146,10 +146,10 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf" H 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Triac_Thyristor:BT169B Q?
+L Triac_Thyristor:BT169B Q401
 U 1 1 5E781672
 P 4350 2800
-F 0 "Q?" H 4438 2846 50  0000 L CNN
+F 0 "Q401" H 4438 2846 50  0000 L CNN
 F 1 "BT169B" H 4438 2755 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4450 2725 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf" H 4350 2800 50  0001 L CNN
@@ -160,10 +160,10 @@ Wire Wire Line
 	5600 3150 5600 3350
 Connection ~ 5600 3350
 $Comp
-L Device:L_Core_Ferrite L?
+L Device:L_Core_Ferrite L401
 U 1 1 5E81266D
 P 5600 3000
-F 0 "L?" H 5688 3046 50  0000 L CNN
+F 0 "L401" H 5688 3046 50  0000 L CNN
 F 1 "HV_Transformer" H 5688 2955 50  0000 L CNN
 F 2 "Plasma-PSU_Eurocard_Flyback:HF-HV_Transformer_15kV_300W" H 5600 3000 50  0001 C CNN
 F 3 "~" H 5600 3000 50  0001 C CNN
@@ -173,56 +173,56 @@ $EndComp
 Wire Wire Line
 	5600 2850 5600 2750
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J401
 U 1 1 5E94AC83
 P 1050 1050
-F 0 "J?" H 968 725 50  0000 C CNN
+F 0 "J401" H 968 725 50  0000 C CNN
 F 1 "PWR_IN" H 968 816 50  0000 C CNN
-F 2 "" H 1050 1050 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 1050 1050 50  0001 C CNN
 F 3 "~" H 1050 1050 50  0001 C CNN
 	1    1050 1050
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C402
 U 1 1 5E94BD6B
 P 2100 1000
-F 0 "C?" H 2192 1046 50  0000 L CNN
+F 0 "C402" H 2192 1046 50  0000 L CNN
 F 1 "6.8µF" H 2192 955 50  0000 L CNN
-F 2 "" H 2100 1000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 2100 1000 50  0001 C CNN
 F 3 "~" H 2100 1000 50  0001 C CNN
 	1    2100 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP_Small C?
+L Device:CP_Small C401
 U 1 1 5E94C2D8
 P 1650 1000
-F 0 "C?" H 1738 1046 50  0000 L CNN
+F 0 "C401" H 1738 1046 50  0000 L CNN
 F 1 "220µF" H 1738 955 50  0000 L CNN
-F 2 "" H 1650 1000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 1650 1000 50  0001 C CNN
 F 3 "~" H 1650 1000 50  0001 C CNN
 	1    1650 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C406
 U 1 1 5E94EE82
 P 3700 1000
-F 0 "C?" H 3792 1046 50  0000 L CNN
+F 0 "C406" H 3792 1046 50  0000 L CNN
 F 1 "100nF" H 3792 955 50  0000 L CNN
-F 2 "" H 3700 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3700 1000 50  0001 C CNN
 F 3 "~" H 3700 1000 50  0001 C CNN
 	1    3700 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C407
 U 1 1 5E94F100
 P 4150 1000
-F 0 "C?" H 4242 1046 50  0000 L CNN
+F 0 "C407" H 4242 1046 50  0000 L CNN
 F 1 "10nF" H 4242 955 50  0000 L CNN
-F 2 "" H 4150 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4150 1000 50  0001 C CNN
 F 3 "~" H 4150 1000 50  0001 C CNN
 	1    4150 1000
 	1    0    0    -1  
@@ -679,12 +679,12 @@ D4 25 13 47 00 3A 32 0E 86 20 08 82 50 3C 6F 01 2C FB 7F 15 05 8B E8 3D 99 EC DE
 EndData
 $EndBitmap
 $Comp
-L Regulator_Linear:L7812 U?
+L Regulator_Linear:L7812 U401
 U 1 1 5E9CA779
 P 1650 1450
-F 0 "U?" H 1650 1692 50  0000 C CNN
+F 0 "U401" H 1650 1692 50  0000 C CNN
 F 1 "L7812" H 1650 1601 50  0000 C CNN
-F 2 "" H 1675 1300 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1675 1300 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1650 1400 50  0001 C CNN
 	1    1650 1450
 	1    0    0    -1  
@@ -694,12 +694,12 @@ Text HLabel 1950 1450 2    50   Output ~ 0
 Connection ~ 2100 900 
 Connection ~ 2100 1100
 $Comp
-L Device:C_Small C?
+L Device:C_Small C403
 U 1 1 5E9D1512
 P 2500 1000
-F 0 "C?" H 2592 1046 50  0000 L CNN
+F 0 "C403" H 2592 1046 50  0000 L CNN
 F 1 "6.8µF" H 2592 955 50  0000 L CNN
-F 2 "" H 2500 1000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 2500 1000 50  0001 C CNN
 F 3 "~" H 2500 1000 50  0001 C CNN
 	1    2500 1000
 	1    0    0    -1  
@@ -707,12 +707,12 @@ $EndComp
 Connection ~ 2500 900 
 Connection ~ 2500 1100
 $Comp
-L Device:C_Small C?
+L Device:C_Small C404
 U 1 1 5E9D186C
 P 2900 1000
-F 0 "C?" H 2992 1046 50  0000 L CNN
+F 0 "C404" H 2992 1046 50  0000 L CNN
 F 1 "6.8µF" H 2992 955 50  0000 L CNN
-F 2 "" H 2900 1000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 2900 1000 50  0001 C CNN
 F 3 "~" H 2900 1000 50  0001 C CNN
 	1    2900 1000
 	1    0    0    -1  
@@ -724,12 +724,12 @@ Connection ~ 2900 1100
 Wire Wire Line
 	2900 1100 3300 1100
 $Comp
-L Device:C_Small C?
+L Device:C_Small C405
 U 1 1 5E9D1E44
 P 3300 1000
-F 0 "C?" H 3392 1046 50  0000 L CNN
+F 0 "C405" H 3392 1046 50  0000 L CNN
 F 1 "6.8µF" H 3392 955 50  0000 L CNN
-F 2 "" H 3300 1000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 3300 1000 50  0001 C CNN
 F 3 "~" H 3300 1000 50  0001 C CNN
 	1    3300 1000
 	1    0    0    -1  
@@ -771,34 +771,34 @@ Wire Wire Line
 Wire Wire Line
 	1250 1050 1250 1750
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J403
 U 1 1 5E95B40C
 P 1050 4150
-F 0 "J?" H 968 3825 50  0000 C CNN
+F 0 "J403" H 968 3825 50  0000 C CNN
 F 1 "ENBL_IN" H 968 3916 50  0000 C CNN
-F 2 "" H 1050 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1050 4150 50  0001 C CNN
 F 3 "~" H 1050 4150 50  0001 C CNN
 	1    1050 4150
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J402
 U 1 1 5E9571C6
 P 1050 3150
-F 0 "J?" H 968 2825 50  0000 C CNN
+F 0 "J402" H 968 2825 50  0000 C CNN
 F 1 "PWM_IN" H 968 2916 50  0000 C CNN
-F 2 "" H 1050 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1050 3150 50  0001 C CNN
 F 3 "~" H 1050 3150 50  0001 C CNN
 	1    1050 3150
 	-1   0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:L7805 U?
+L Regulator_Linear:L7805 U402
 U 1 1 5E9DF30B
 P 1650 2100
-F 0 "U?" H 1650 2342 50  0000 C CNN
+F 0 "U402" H 1650 2342 50  0000 C CNN
 F 1 "L7805" H 1650 2251 50  0000 C CNN
-F 2 "" H 1675 1950 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1675 1950 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 1650 2050 50  0001 C CNN
 	1    1650 2100
 	1    0    0    -1  
@@ -814,34 +814,34 @@ Connection ~ 1250 1750
 Text HLabel 1950 2100 2    50   Output ~ 0
 +5V
 $Comp
-L Isolator:ILD74 U?
+L Isolator:ILD74 U403
 U 1 1 5E9E2CF0
 P 2300 3100
-F 0 "U?" H 2300 3425 50  0000 C CNN
+F 0 "U403" H 2300 3425 50  0000 C CNN
 F 1 "ILD74" H 2300 3334 50  0000 C CNN
-F 2 "" H 2100 2900 50  0001 L CIN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2100 2900 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2300 3100 50  0001 L CNN
 	1    2300 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:ILD74 U?
+L Isolator:ILD74 U403
 U 2 1 5E9E35C7
 P 2300 4100
-F 0 "U?" H 2300 4425 50  0000 C CNN
+F 0 "U403" H 2300 4425 50  0000 C CNN
 F 1 "ILD74" H 2300 4334 50  0000 C CNN
-F 2 "" H 2100 3900 50  0001 L CIN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2100 3900 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2300 4100 50  0001 L CNN
 	2    2300 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D401
 U 1 1 5E9F17EB
 P 1700 3450
-F 0 "D?" H 1693 3667 50  0000 C CNN
+F 0 "D401" H 1693 3667 50  0000 C CNN
 F 1 "PWM_LED" H 1693 3576 50  0000 C CNN
-F 2 "" H 1700 3450 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1700 3450 50  0001 C CNN
 F 3 "~" H 1700 3450 50  0001 C CNN
 	1    1700 3450
 	1    0    0    -1  
@@ -859,12 +859,12 @@ Wire Wire Line
 Wire Wire Line
 	1900 3200 2000 3200
 $Comp
-L Device:LED D?
+L Device:LED D402
 U 1 1 5E9FC737
 P 1700 4450
-F 0 "D?" H 1693 4667 50  0000 C CNN
+F 0 "D402" H 1693 4667 50  0000 C CNN
 F 1 "ENBL_LED" H 1693 4576 50  0000 C CNN
-F 2 "" H 1700 4450 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1700 4450 50  0001 C CNN
 F 3 "~" H 1700 4450 50  0001 C CNN
 	1    1700 4450
 	1    0    0    -1  
@@ -882,12 +882,12 @@ Wire Wire Line
 Wire Wire Line
 	1250 4150 1450 4150
 $Comp
-L Device:R R?
+L Device:R R402
 U 1 1 5E9FDCE7
 P 1700 4000
-F 0 "R?" V 1493 4000 50  0000 C CNN
+F 0 "R402" V 1493 4000 50  0000 C CNN
 F 1 "250R" V 1584 4000 50  0000 C CNN
-F 2 "" V 1630 4000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1630 4000 50  0001 C CNN
 F 3 "~" H 1700 4000 50  0001 C CNN
 	1    1700 4000
 	0    1    1    0   
@@ -901,12 +901,12 @@ Wire Wire Line
 Wire Wire Line
 	1850 4000 2000 4000
 $Comp
-L Device:R R?
+L Device:R R401
 U 1 1 5EA017C0
 P 1700 3000
-F 0 "R?" V 1493 3000 50  0000 C CNN
+F 0 "R401" V 1493 3000 50  0000 C CNN
 F 1 "250R" V 1584 3000 50  0000 C CNN
-F 2 "" V 1630 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1630 3000 50  0001 C CNN
 F 3 "~" H 1700 3000 50  0001 C CNN
 	1    1700 3000
 	0    1    1    0   
@@ -922,12 +922,12 @@ Wire Wire Line
 Text HLabel 2600 3000 2    50   Input ~ 0
 +5V
 $Comp
-L Device:R R?
+L Device:R R403
 U 1 1 5EA0514F
 P 2750 3350
-F 0 "R?" H 2680 3304 50  0000 R CNN
+F 0 "R403" H 2680 3304 50  0000 R CNN
 F 1 "1k" H 2680 3395 50  0000 R CNN
-F 2 "" V 2680 3350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 3350 50  0001 C CNN
 F 3 "~" H 2750 3350 50  0001 C CNN
 	1    2750 3350
 	-1   0    0    1   
@@ -942,12 +942,12 @@ Wire Wire Line
 Text HLabel 2600 4000 2    50   Input ~ 0
 +5V
 $Comp
-L Device:R R?
+L Device:R R404
 U 1 1 5EA0C713
 P 2750 4350
-F 0 "R?" H 2680 4304 50  0000 R CNN
+F 0 "R404" H 2680 4304 50  0000 R CNN
 F 1 "1k" H 2680 4395 50  0000 R CNN
-F 2 "" V 2680 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 4350 50  0001 C CNN
 F 3 "~" H 2750 4350 50  0001 C CNN
 	1    2750 4350
 	-1   0    0    1   
