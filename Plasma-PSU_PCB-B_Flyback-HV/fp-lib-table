@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Plasma-PSU_PCB-B_Flyback-HV)(type KiCad)(uri ${KIPRJMOD}/Plasma-PSU_PCB-B_Flyback-HV.pretty)(options "")(descr ""))
+)

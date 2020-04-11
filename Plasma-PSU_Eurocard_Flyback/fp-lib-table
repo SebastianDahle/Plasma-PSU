@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Plasma-PSU_Eurocard_Flyback)(type KiCad)(uri ${KIPRJMOD}/Plasma-PSU_Eurocard_Flyback.pretty)(options "")(descr ""))
-)
