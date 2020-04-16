@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\sda\Documents\GitHub\Plasma-PSU\Plasma-PSU_PCB-B_Flyback-HV\Plasma-PSU_PCB-B_Flyback-HV.sch</source>
+    <date>15.04.2020 22:03:03</date>
+    <tool>Eeschema (5.1.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Plasma-PSU_PCB-B_Flyback-HV</title>
+        <company>University of Ljubljana</company>
+        <rev>0.0.1</rev>
+        <date>2020-04-11</date>
+        <source>Plasma-PSU_PCB-B_Flyback-HV.sch</source>
+        <comment number="1" value="Biotechnical faculty"/>
+        <comment number="2" value="Plasma Center"/>
+        <comment number="3" value=""/>
+        <comment number="4" value="This work is licensed under a Creative Commons Attribution 3.0 Unported License"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D105">
+      <value>UF4007</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933004</tstamp>
+    </comp>
+    <comp ref="D104">
+      <value>ZD20</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933010</tstamp>
+    </comp>
+    <comp ref="D103">
+      <value>ZD5</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93301A</tstamp>
+    </comp>
+    <comp ref="Q102">
+      <value>TIP41C</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=tip41.PDF</datasheet>
+      <libsource lib="Transistor_BJT" part="TIP41C" description="6A Ic, 100V Vce, Power NPN Transistor, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933020</tstamp>
+    </comp>
+    <comp ref="Q103">
+      <value>TIP42C</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=TIP42.PDF</datasheet>
+      <libsource lib="Transistor_BJT" part="TIP42C" description="-6A Ic, -100V Vce, Power PNP Transistor, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933026</tstamp>
+    </comp>
+    <comp ref="R106">
+      <value>4R7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93302C</tstamp>
+    </comp>
+    <comp ref="R105">
+      <value>300R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933032</tstamp>
+    </comp>
+    <comp ref="Q105">
+      <value>IPW60</value>
+      <footprint>Package_TO_SOT_THT:TO-247-3_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933038</tstamp>
+    </comp>
+    <comp ref="Q104">
+      <value>BT169B</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf</datasheet>
+      <libsource lib="Triac_Thyristor" part="BT169B" description="0.5A Ion, 200V Voff, Thyristors logic level, Silicon Controlled Rectifier (Thyristor), TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93303E</tstamp>
+    </comp>
+    <comp ref="Q101">
+      <value>BT169B</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf</datasheet>
+      <libsource lib="Triac_Thyristor" part="BT169B" description="0.5A Ion, 200V Voff, Thyristors logic level, Silicon Controlled Rectifier (Thyristor), TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933044</tstamp>
+    </comp>
+    <comp ref="J102">
+      <value>PWR_IN</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933053</tstamp>
+    </comp>
+    <comp ref="C102">
+      <value>6.8µF</value>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933059</tstamp>
+    </comp>
+    <comp ref="C101">
+      <value>220µF</value>
+      <footprint>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP_Small" description="Polarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93305F</tstamp>
+    </comp>
+    <comp ref="C106">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933065</tstamp>
+    </comp>
+    <comp ref="C107">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93306B</tstamp>
+    </comp>
+    <comp ref="U101">
+      <value>L7812</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="L7812" description="Positive 1.5A 35V Linear Regulator, Fixed Output 12V, TO-220/TO-263/TO-252"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93308E</tstamp>
+    </comp>
+    <comp ref="C103">
+      <value>6.8µF</value>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933097</tstamp>
+    </comp>
+    <comp ref="C104">
+      <value>6.8µF</value>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93309F</tstamp>
+    </comp>
+    <comp ref="C105">
+      <value>6.8µF</value>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330A9</tstamp>
+    </comp>
+    <comp ref="J103">
+      <value>ENBL_IN</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330C4</tstamp>
+    </comp>
+    <comp ref="J101">
+      <value>PWM_IN</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330CA</tstamp>
+    </comp>
+    <comp ref="U103">
+      <value>ILD74</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.vishay.com/docs/83640/ild74.pdf</datasheet>
+      <libsource lib="Isolator" part="ILD74" description="Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330DC</tstamp>
+    </comp>
+    <comp ref="D101">
+      <value>PWM_LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330E8</tstamp>
+    </comp>
+    <comp ref="D102">
+      <value>ENBL_LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330F4</tstamp>
+    </comp>
+    <comp ref="R103">
+      <value>250R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933100</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>250R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93310A</tstamp>
+    </comp>
+    <comp ref="R102">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933115</tstamp>
+    </comp>
+    <comp ref="R104">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E933120</tstamp>
+    </comp>
+    <comp ref="U102">
+      <value>L7805</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="L7805" description="Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9330D0</tstamp>
+    </comp>
+    <comp ref="J105">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93973F</tstamp>
+    </comp>
+    <comp ref="J106">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93A009</tstamp>
+    </comp>
+    <comp ref="J107">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93A499</tstamp>
+    </comp>
+    <comp ref="J108">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93A6FA</tstamp>
+    </comp>
+    <comp ref="J109">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93AA50</tstamp>
+    </comp>
+    <comp ref="J104">
+      <value>Conn_01x01_Female</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x01_Female" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E93AC74</tstamp>
+    </comp>
+    <comp ref="L101">
+      <value>HV_Transformer</value>
+      <footprint>Plasma-PSU_PCB-B_Flyback-HV:HF-HV_Transformer_15kV_300W</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L_Core_Ferrite_Coupled" description="Coupled inductor with ferrite core"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9548A9</tstamp>
+    </comp>
+    <comp ref="J110">
+      <value>GND_SHIELD</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E965686</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x01_Female">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Core_Ferrite_Coupled">
+      <description>Coupled inductor with ferrite core</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Ferrite_Coupled</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="ILD74">
+      <description>Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8</description>
+      <docs>https://www.vishay.com/docs/83640/ild74.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>DIP*W10.16mm*</fp>
+        <fp>SMDIP*W9.53mm*Clearance8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ILD74</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="L7805">
+      <aliases>
+        <alias>L7806</alias>
+        <alias>L7808</alias>
+        <alias>L7885</alias>
+        <alias>L7809</alias>
+        <alias>L7812</alias>
+        <alias>L7815</alias>
+        <alias>L7818</alias>
+        <alias>L7824</alias>
+      </aliases>
+      <description>Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf</docs>
+      <footprints>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L7805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BD910">
+      <aliases>
+        <alias>BD912</alias>
+        <alias>TIP42</alias>
+        <alias>TIP42A</alias>
+        <alias>TIP42B</alias>
+        <alias>TIP42C</alias>
+      </aliases>
+      <description>15A, Silicon Power PNP Transistors, TO-220</description>
+      <docs>http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001277.pdf</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BD910</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BD911">
+      <aliases>
+        <alias>BD909</alias>
+        <alias>TIP41A</alias>
+        <alias>TIP41B</alias>
+        <alias>TIP41C</alias>
+        <alias>TIP41</alias>
+      </aliases>
+      <description>15A, Silicon Power NPN Transistors, TO-220</description>
+      <docs>http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001277.pdf</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BD911</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="C" type="passive"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Triac_Thyristor" part="BT169B">
+      <aliases>
+        <alias>BT169D</alias>
+        <alias>BT169G</alias>
+      </aliases>
+      <description>0.5A Ion, 200V Voff, Thyristors logic level, Silicon Controlled Rectifier (Thyristor), TO-92</description>
+      <docs>https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf</docs>
+      <footprints>
+        <fp>TO?92*Inline*Narrow*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BT169B</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Isolator.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
+    </library>
+    <library logical="Triac_Thyristor">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Triac_Thyristor.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="U103" pin="6"/>
+      <node ref="U102" pin="3"/>
+      <node ref="U103" pin="7"/>
+    </net>
+    <net code="2" name="Net-(J101-Pad2)">
+      <node ref="J101" pin="2"/>
+      <node ref="R101" pin="2"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="D105" pin="2"/>
+      <node ref="C107" pin="2"/>
+      <node ref="C106" pin="2"/>
+      <node ref="C101" pin="2"/>
+      <node ref="C102" pin="2"/>
+      <node ref="J102" pin="2"/>
+      <node ref="Q105" pin="3"/>
+      <node ref="Q103" pin="3"/>
+      <node ref="C104" pin="2"/>
+      <node ref="U102" pin="2"/>
+      <node ref="C103" pin="2"/>
+      <node ref="U101" pin="2"/>
+      <node ref="C105" pin="2"/>
+      <node ref="D103" pin="2"/>
+      <node ref="D104" pin="2"/>
+      <node ref="R102" pin="1"/>
+      <node ref="R104" pin="1"/>
+    </net>
+    <net code="4" name="+12V">
+      <node ref="Q104" pin="1"/>
+      <node ref="U101" pin="3"/>
+    </net>
+    <net code="5" name="Net-(R101-Pad1)">
+      <node ref="U103" pin="1"/>
+      <node ref="R101" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D102-Pad2)">
+      <node ref="U103" pin="3"/>
+      <node ref="D102" pin="2"/>
+    </net>
+    <net code="7" name="Net-(D101-Pad2)">
+      <node ref="U103" pin="2"/>
+      <node ref="D101" pin="2"/>
+    </net>
+    <net code="8" name="Net-(D101-Pad1)">
+      <node ref="J101" pin="1"/>
+      <node ref="D101" pin="1"/>
+    </net>
+    <net code="9" name="Net-(D102-Pad1)">
+      <node ref="J103" pin="1"/>
+      <node ref="D102" pin="1"/>
+    </net>
+    <net code="10" name="Net-(R103-Pad1)">
+      <node ref="U103" pin="4"/>
+      <node ref="R103" pin="1"/>
+    </net>
+    <net code="11" name="Net-(J103-Pad2)">
+      <node ref="R103" pin="2"/>
+      <node ref="J103" pin="2"/>
+    </net>
+    <net code="12" name="Earth_Protective">
+      <node ref="J107" pin="1"/>
+      <node ref="J104" pin="1"/>
+      <node ref="J110" pin="2"/>
+      <node ref="J110" pin="1"/>
+      <node ref="J109" pin="1"/>
+      <node ref="J108" pin="1"/>
+      <node ref="J105" pin="1"/>
+      <node ref="J106" pin="1"/>
+    </net>
+    <net code="13" name="Net-(D105-Pad1)">
+      <node ref="L101" pin="4"/>
+      <node ref="D105" pin="1"/>
+      <node ref="L101" pin="2"/>
+      <node ref="Q105" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D104-Pad1)">
+      <node ref="R106" pin="1"/>
+      <node ref="Q105" pin="1"/>
+      <node ref="D104" pin="1"/>
+    </net>
+    <net code="15" name="ENBL">
+      <node ref="U103" pin="5"/>
+      <node ref="Q101" pin="2"/>
+      <node ref="Q104" pin="2"/>
+      <node ref="R104" pin="2"/>
+    </net>
+    <net code="16" name="PWM">
+      <node ref="R102" pin="2"/>
+      <node ref="Q101" pin="1"/>
+      <node ref="U103" pin="8"/>
+    </net>
+    <net code="17" name="Net-(Q101-Pad3)">
+      <node ref="R105" pin="1"/>
+      <node ref="Q101" pin="3"/>
+    </net>
+    <net code="18" name="Net-(Q102-Pad3)">
+      <node ref="R106" pin="2"/>
+      <node ref="Q103" pin="2"/>
+      <node ref="Q102" pin="3"/>
+    </net>
+    <net code="19" name="Net-(D103-Pad1)">
+      <node ref="R105" pin="2"/>
+      <node ref="Q103" pin="1"/>
+      <node ref="Q102" pin="1"/>
+      <node ref="D103" pin="1"/>
+    </net>
+    <net code="20" name="Net-(Q102-Pad2)">
+      <node ref="Q104" pin="3"/>
+      <node ref="Q102" pin="2"/>
+    </net>
+    <net code="21" name="VDD">
+      <node ref="C101" pin="1"/>
+      <node ref="C106" pin="1"/>
+      <node ref="U101" pin="1"/>
+      <node ref="C103" pin="1"/>
+      <node ref="U102" pin="1"/>
+      <node ref="C107" pin="1"/>
+      <node ref="C104" pin="1"/>
+      <node ref="C105" pin="1"/>
+      <node ref="J102" pin="1"/>
+      <node ref="C102" pin="1"/>
+      <node ref="L101" pin="3"/>
+      <node ref="L101" pin="1"/>
+    </net>
+  </nets>
+</export>

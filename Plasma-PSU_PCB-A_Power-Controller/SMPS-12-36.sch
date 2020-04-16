@@ -219,18 +219,18 @@ L Device:R R502
 U 1 1 5E984D2D
 P 2350 1450
 F 0 "R502" V 2143 1450 50  0000 C CNN
-F 1 "2mR" V 2234 1450 50  0000 C CNN
+F 1 "1.1mR" V 2234 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 2280 1450 50  0001 C CNN
 F 3 "~" H 2350 1450 50  0001 C CNN
 	1    2350 1450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 1450 2200 1950
+	2200 1450 2200 1800
 Wire Wire Line
 	2200 1950 2800 1950
 Wire Wire Line
-	2500 1450 2500 2100
+	2500 1450 2500 1800
 Wire Wire Line
 	2500 2100 2800 2100
 Wire Wire Line
@@ -324,7 +324,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 2550 4950 2550
 Text Notes 7750 6400 0    50   ~ 0
-LTC3786 configuration\n---------------\nPin 1 feedback compared against internal 1.2V, hence Vout=1.2V(1+RA/RB)\nPin 2/3 sets max current. Rsense=75mV/(20A+0.5*dI_L) == 3mR \nPin 4 sets I trip threshold -> according to datasheet.\nPin 5 sets soft start time: tSS=Css*1,2V/10µA == 12ms\nPin 6 to GND == Burst mode\nPin 7 sets frequency via 20µA source to GND. Set to min. == 350kHz\nPin 8 Run control - below 1.28V shutdown controller, below 0.7V shutdown entire IC\nPin 9 GND\nPin 10 bottom gate\nPin 11 Internal 5.4V LDO, decouple to GND with min 4.7µF low ESR MLCC\nPin 12 - tie to VIN, bypass cap to GND\nPin 13 bypass cap to SW, Schottky to INTVcc\nPin 14 top gate\nPin 15 switch node = source of top MOSFET, drain of bottom MOSFET, inductor\nPin 16 power good indicator
+LTC3786 configuration\n---------------\nPin 1 feedback compared against internal 1.2V, hence Vout=1.2V(1+RA/RB)\nPin 2/3 sets max current. Rsense=75mV/(60A+0.5*dI_L) == 1.1mR \nPin 4 sets I trip threshold -> according to datasheet.\nPin 5 sets soft start time: tSS=Css*1,2V/10µA == 12ms\nPin 6 to GND == Burst mode\nPin 7 sets frequency via 20µA source to GND. Set to min. == 350kHz\nPin 8 Run control - below 1.28V shutdown controller, below 0.7V shutdown entire IC\nPin 9 GND\nPin 10 bottom gate\nPin 11 Internal 5.4V LDO, decouple to GND with min 4.7µF low ESR MLCC\nPin 12 - tie to VIN, bypass cap to GND\nPin 13 bypass cap to SW, Schottky to INTVcc\nPin 14 top gate\nPin 15 switch node = source of top MOSFET, drain of bottom MOSFET, inductor\nPin 16 power good indicator
 Connection ~ 4850 1950
 Connection ~ 4850 2250
 Connection ~ 4850 2550
@@ -1793,4 +1793,23 @@ Wire Wire Line
 Connection ~ 2200 2850
 Wire Wire Line
 	2200 2850 2750 2850
+$Comp
+L Device:C C401
+U 1 1 5E983B74
+P 2350 1800
+F 0 "C401" V 2602 1800 50  0000 C CNN
+F 1 "C" V 2511 1800 50  0000 C CNN
+F 2 "" H 2388 1650 50  0001 C CNN
+F 3 "~" H 2350 1800 50  0001 C CNN
+	1    2350 1800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2200 1800
+Wire Wire Line
+	2200 1800 2200 1950
+Connection ~ 2500 1800
+Wire Wire Line
+	2500 1800 2500 2100
+Text Notes 2850 800  0    50   ~ 0
+Rsense draws ~200µA
 $EndSCHEMATC

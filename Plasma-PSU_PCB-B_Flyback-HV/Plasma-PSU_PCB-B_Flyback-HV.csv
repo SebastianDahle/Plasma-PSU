@@ -1,0 +1,27 @@
+Reference; Quantity; Value; Footprint;;; Datasheet
+C101 ;1;220 µF;Capacitor_THT:CP_Radial_D8.0mm_P3.50mm;;;~
+C102 C103 C104 C105 ;4;6.8 µF;Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm;;;~
+C106 ;1;100nF;Capacitor_SMD:C_1206_3216Metric;;;~
+C107 ;1;10nF;Capacitor_SMD:C_0805_2012Metric;;;~
+D101 ;1;PWM_LED;LED_SMD:LED_0603_1608Metric;;;~
+D102 ;1;ENBL_LED;LED_SMD:LED_0603_1608Metric;;;~
+D103 ;1;ZD5;Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal;;;~
+D104 ;1;ZD20;Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal;;;~
+D105 ;1;UF4007;Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal;;;~
+J101 ;1;PWM_IN;Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical;;;~
+J102 ;1;PWR_IN;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal;;;~
+J103 ;1;ENBL_IN;Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical;;;~
+J105 J106 J107 J108 J109 J104 ;6;Conn_01x01_Female;MountingHole:MountingHole_3.2mm_M3_Pad_Via;;;~
+J110 ;1;GND_SHIELD;TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal;;;~
+L101 ;1;HV_Transformer;Plasma-PSU_PCB-B_Flyback-HV:HF-HV_Transformer_15kV_300W;;;~
+Q102 ;1;TIP41C;Package_TO_SOT_THT:TO-220-3_Vertical;;;https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF
+Q103 ;1;TIP42C;Package_TO_SOT_THT:TO-220-3_Vertical;;;https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF
+Q104 Q101 ;2;BT169B;Package_TO_SOT_THT:TO-92_Inline;;;https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/BT169_Series.pdf
+Q105 ;1;IPW60;Package_TO_SOT_THT:TO-247-3_Vertical;;;~
+R102 R104 ;2;1k;Resistor_SMD:R_0603_1608Metric;;;~
+R103 R101 ;2;250R;Resistor_SMD:R_0603_1608Metric;;;~
+R105 ;1;300R;Resistor_SMD:R_0603_1608Metric;;;~
+R106 ;1;4R7;Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;;;~
+U101 ;1;L7812;Package_TO_SOT_THT:TO-220-3_Vertical;;;http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+U102 ;1;L7805;Package_TO_SOT_THT:TO-220-3_Vertical;;;http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+U103 ;1;ILD74;Package_DIP:DIP-8_W7.62mm;;;https://www.vishay.com/docs/83640/ild74.pdf

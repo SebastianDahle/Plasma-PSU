@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Plasma-PSU_Eurocard_Flyback-cache
+LIBS:Plasma-PSU_PCB-A_Power-Controller-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 4
+Sheet 4 4
 Title "Plasma-PSU_Eurocard_Flyback"
 Date "2020-04-08"
 Rev "0.0.4"
@@ -226,11 +226,11 @@ F 3 "~" H 2350 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 1450 2200 1950
+	2200 1450 2200 1800
 Wire Wire Line
 	2200 1950 2800 1950
 Wire Wire Line
-	2500 1450 2500 2100
+	2500 1450 2500 1800
 Wire Wire Line
 	2500 2100 2800 2100
 Wire Wire Line
@@ -1518,7 +1518,7 @@ U 1 1 5E9117BD
 P 5200 2700
 F 0 "Q501" H 5404 2746 50  0000 L CNN
 F 1 "NVTFS6H850NL" H 5404 2655 50  0000 L CNN
-F 2 "Plasma-PSU_Eurocard_Flyback:ONSEMI-µ8FL" H 5400 2800 50  0001 C CNN
+F 2 "Plasma-PSU_PCB-A_Power-Controller:ONSEMI-µ8FL" H 5400 2800 50  0001 C CNN
 F 3 "~" H 5200 2700 50  0001 C CNN
 	1    5200 2700
 	1    0    0    -1  
@@ -1534,7 +1534,7 @@ U 1 1 5E92209C
 P 5600 1550
 F 0 "Q502" V 5942 1550 50  0000 C CNN
 F 1 "NVTFS6H850NL" V 5851 1550 50  0000 C CNN
-F 2 "Plasma-PSU_Eurocard_Flyback:ONSEMI-µ8FL" H 5800 1650 50  0001 C CNN
+F 2 "Plasma-PSU_PCB-A_Power-Controller:ONSEMI-µ8FL" H 5800 1650 50  0001 C CNN
 F 3 "~" H 5600 1550 50  0001 C CNN
 	1    5600 1550
 	0    1    -1   0   
@@ -1793,4 +1793,21 @@ Wire Wire Line
 Connection ~ 2200 2850
 Wire Wire Line
 	2200 2850 2750 2850
+$Comp
+L Device:C C401
+U 1 1 5E983B74
+P 2350 1800
+F 0 "C401" V 2602 1800 50  0000 C CNN
+F 1 "C" V 2511 1800 50  0000 C CNN
+F 2 "" H 2388 1650 50  0001 C CNN
+F 3 "~" H 2350 1800 50  0001 C CNN
+	1    2350 1800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2200 1800
+Wire Wire Line
+	2200 1800 2200 1950
+Connection ~ 2500 1800
+Wire Wire Line
+	2500 1800 2500 2100
 $EndSCHEMATC
