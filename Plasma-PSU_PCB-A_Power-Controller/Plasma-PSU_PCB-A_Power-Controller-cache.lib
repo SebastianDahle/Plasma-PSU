@@ -488,29 +488,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -719,6 +696,29 @@ X PLLIN/MODE 6 -600 -950 100 R 50 50 1 1 I
 X FREQ 7 -600 -1100 100 R 50 50 1 1 I
 X RUN 8 -600 -1250 100 R 50 50 1 1 I
 X GND 9 600 -1250 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# SamacSys_lib_loader_7443640330B
+#
+DEF SamacSys_lib_loader_7443640330B L 0 30 Y Y 1 F N
+F0 "L" 650 300 50 H V L CNN
+F1 "SamacSys_lib_loader_7443640330B" 650 200 50 H V L CNN
+F2 "7443640330B" 650 100 50 H I L CNN
+F3 "https://katalog.we-online.com/pbs/datasheet/7443640330.pdf" 650 0 50 H I L CNN
+F4 "Wurth WE-HCF Series Type SMT Shielded Wire-wound SMD Inductor with a MnZn Core, 3.3 H +/-20% Shielded 47.5A Idc" 650 -100 50 H I L CNN "Description"
+F5 "18.5" 650 -200 50 H I L CNN "Height"
+F6 "Wurth Elektronik" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "7443640330B" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "710-7443640330B" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-7443640330B" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "1857417" 650 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/1857417" 650 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
