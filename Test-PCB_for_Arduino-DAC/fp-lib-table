@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Plasma-PSU_PCB-A_Power-Controller)(type KiCad)(uri ${KIPRJMOD}/Plasma-PSU_PCB-A_Power-Controller.pretty)(options "")(descr ""))
+)
