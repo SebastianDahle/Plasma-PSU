@@ -1454,17 +1454,6 @@ Connection ~ 1900 1800
 Connection ~ 1900 1900
 Wire Wire Line
 	1900 1900 1900 1800
-$Comp
-L power:VAA #PWR0213
-U 1 1 5E9816A9
-P 1400 4600
-F 0 "#PWR0213" H 1400 4450 50  0001 C CNN
-F 1 "VAA" V 1415 4727 50  0000 L CNN
-F 2 "" H 1400 4600 50  0001 C CNN
-F 3 "" H 1400 4600 50  0001 C CNN
-	1    1400 4600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1900 4800 1900 4700
 Connection ~ 1900 4800
@@ -1535,5 +1524,7 @@ PWR_GOOD
 Text HLabel 5100 2100 3    50   Input ~ 0
 PWR_GOOD
 Text HLabel 1400 1700 0    50   Output ~ 0
+PWR_GOOD
+Text HLabel 1400 4600 0    50   Input ~ 0
 PWR_GOOD
 $EndSCHEMATC
